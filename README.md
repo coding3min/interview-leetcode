@@ -35,9 +35,10 @@
 
 # 如何参与协作？
 
-如果有想法和创意，请提[issue](https://github.com/coding3min/coding3min/issues)或者进群提
-如果想贡献代码，请提[PR](https://github.com/coding3min/coding3min/pulls)
-如果需要修改项目中图片，这里存放了项目中绘制图的源代码， 大家可以用[draw.io](https://www.draw.io/)打开进行编辑。
+- 如果你不会使用`git`，参考 [每天三分钟玩转Git](https://mp.weixin.qq.com/s/ReD6suGmPvEmd5wKdylR2w)
+- 如果有想法和创意，请提[issue](https://github.com/coding3min/coding3min/issues)或者进群提
+- 如果想贡献代码，请提[PR](https://github.com/coding3min/coding3min/pulls)
+- 如果需要修改项目中图片，这里存放了项目中绘制图的源代码， 大家可以用[draw.io](https://www.draw.io/)打开进行编辑。
 
 写作规范参考：[中文技术文档的写作规范](https://github.com/ruanyf/document-style-guide)
 
