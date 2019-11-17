@@ -16,7 +16,7 @@
 
 |1 | 2 | 3 | 4 | 5 |
 |---|---|---|---|---|
-| [week46](./week/2019_week46.md) | week47 | week48 | week49 | week50 | 
+| [week46](./algorithm/week/2019_week46) | week47 | week48 | week49 | week50 | 
 | week51 | week52 | - |  - | - | 
 
 ## 如何参与？
