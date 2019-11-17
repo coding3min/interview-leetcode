@@ -12,11 +12,11 @@
 |[数据结构 - 探索板块](https://leetcode-cn.com/explore/learn/)|[算法面试 - 题目汇总](https://leetcode-cn.com/explore/interview/card/top-interview-quesitons-in-2018/)| - |
 
 ## 践行记录
-2019年47周开始
+2019年46周开始
 
 |1 | 2 | 3 | 4 | 5 |
 |---|---|---|---|---|
-| [week46](./algorithm/week/2019_week46) | week47 | week48 | week49 | week50 | 
+| [week46](./week/201911_week46) | week47 | week48 | week49 | week50 | 
 | week51 | week52 | - |  - | - | 
 
 ## 如何参与？
