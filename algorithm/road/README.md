@@ -59,5 +59,3 @@
 见 [算法归纳模板](/algorithm/template.md)
 
 
-
-[返回上一层](../)

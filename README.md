@@ -1,4 +1,4 @@
-# coding3min
+## coding3min
 
 [![Travis](https://img.shields.io/badge/language-C++-green.svg)]()
 [![Travis](https://img.shields.io/badge/language-JavaScript-yellow.svg)]()
@@ -13,7 +13,7 @@
 --- 
  
 如果对这个项目感兴趣，请点击一下 **Star**， 项目会 **持续更新**，感谢大家的支持。
-# 目录说明
+## 目录说明
 
 |目录名称|  作用 |
 |---|---|
@@ -22,19 +22,19 @@
 |[digests_daily](./digests_daily)|群内精华问答和碎片思考记录|
 |[thinking_monthly](./thinking_monthly)|每月思考记录|
 
-# 介绍
+## 介绍
 
 此项目为[编程大队](https://t.zsxq.com/rvBMzRv)小伙伴合作完成，记录每月思考、每周算法、每周分享等等的地方。
 
 后续会更新关于各种技术方向的知识建设。
 
-# 我们的目标
+## 我们的目标
 
 - 围绕找工作、跳槽方法论、深化职场技能+内功+工具+包装、升职加薪、职场突围
 - 更底层的目标是成为一个更好的自己、技术人/it人。
 - 建立一个最牛逼的Ip。
 
-# 如何参与协作？
+## 如何参与协作？
 
 - 如果你不会使用`git`，参考 [每天三分钟玩转Git](https://mp.weixin.qq.com/s/ReD6suGmPvEmd5wKdylR2w)
 - 如果有想法和创意，请提[issue](https://github.com/coding3min/coding3min/issues)或者进群提
@@ -43,7 +43,7 @@
 
 写作规范参考：[中文技术文档的写作规范](https://github.com/ruanyf/document-style-guide)
 
-# 加入我们
+## 加入我们
 
 我们聚集的地方：[知识星球](https://t.zsxq.com/rvBMzRv)
 
@@ -52,7 +52,7 @@
 ![编程三分钟](assets/simple.png)
 
 
-# 关于我
+## 关于我
 
 【昵称】小熊
 
@@ -69,11 +69,11 @@
 【创建星球原因】近两年有幸认识了不少优秀的人，越来越能感受到圈子对人的影响，人以群分，能组织一群优秀的人在一起，一起为了彼此变得更好而努力是多么幸福的一件事情。
 
 
-# 鸣谢
+## 鸣谢
 
 感谢为这个项目作出贡献的所有[小伙伴](https://github.com/coding3min/coding3min/graphs/contributors)
 
-# 开源协议
+## 开源协议
 
 Apache2.0协议 意思是**需要注明原项目出处**
 
