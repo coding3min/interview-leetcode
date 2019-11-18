@@ -49,7 +49,7 @@
 
 我们的公众号
 
-![编程三分钟](https://mmbiz.qpic.cn/mmbiz_png/kvBoa7t4PRHibbNpmqiaB0iaWzu4yO2QibYMFb7AgKDVoIC6jRJXVnZ13V5V5KZibxqXlng29hx0thicd0TzicaeicgDfA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![编程三分钟](assets/simple.png)
 
 
 # 关于我
