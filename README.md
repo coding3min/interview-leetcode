@@ -14,12 +14,13 @@
  
 如果对这个项目感兴趣，请点击一下 **Star**， 项目会 **持续更新**，感谢大家的支持。
 # 目录说明
+
 |目录名称|  作用 |
 |---|---|
-|algorithm|记录算法相关内容：每周算法、面试常用算法题解、leetcode题解|
-|assets|图片存储目录|
-|digests_daily|群内精华问答和碎片思考记录|
-| thinking_monthly|每月思考记录|
+|[algorithm](./algorithm)|记录算法相关内容：每周算法、面试常用算法题解、leetcode题解|
+|[assets](./assets)|图片存储目录|
+|[digests_daily](./digests_daily)|群内精华问答和碎片思考记录|
+|[thinking_monthly](./thinking_monthly)|每月思考记录|
 
 # 介绍
 

@@ -30,4 +30,7 @@
 - 参与归纳，按照题目所属类型归纳到`road`或`leetcode`相应位置中，需要会使用`git`协作
 
 ## 践行模板
-见 [算法归纳模板](./template.md)
+见 [算法归纳模板](/algorithm/template.md)
+
+
+[返回主页](/)
