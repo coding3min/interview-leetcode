@@ -1,79 +1,115 @@
-## coding3min
+### LeetCode
+
+![author](https://img.shields.io/badge/author-minibear2333-blueviolet.svg)
+![license](https://img.shields.io/github/license/coding3min/LeetCode.svg)
+![last commit](https://img.shields.io/github/last-commit/coding3min/LeetCode.svg)
+![issues](https://img.shields.io/github/issues/coding3min/LeetCode.svg)
+![stars](https://img.shields.io/github/stars/coding3min/LeetCode.svg)
+![forks](https://img.shields.io/github/forks/coding3min/LeetCode.svg)
 
 [![Travis](https://img.shields.io/badge/language-C++-green.svg)]()
 [![Travis](https://img.shields.io/badge/language-JavaScript-yellow.svg)]()
 [![Travis](https://img.shields.io/badge/language-Python-red.svg)]()
 [![Travis](https://img.shields.io/badge/language-Java-blue.svg)]()
+[![Travis](https://img.shields.io/badge/language-Golang-orange.svg)]()
 
-![历史共访问次数](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=coding3min.coding3min)
-![今天被访问次数](https://visitor-count-badge.herokuapp.com/today.svg?repo_id=coding3min.coding3min)
+-------
 
-> 统计数据的时间是从 2019-11-13 09:00 起至今
+* 如果这个项目能为您带来帮助，我将感到非常荣幸！同时非常欢迎您加入coding3min的算法交流微信群一起探讨关于coding3min新一期的学习计划。
 
---- 
- 
-如果对这个项目感兴趣，请点击一下 **Star**， 项目会 **持续更新**，感谢大家的支持。
-## 目录说明
+* coding3min的成长离不开所有算法爱好者和开发朋友们的支持！如果您也对这个项目感兴趣，请点击一下  **Star** 以示鼓励， 项目会 **持续更新**，谢谢你的支持。
 
-|目录名称|  作用 |
-|---|---|
-|[algorithm](./algorithm)|记录算法相关内容：每周算法、面试常用算法题解、leetcode题解|
-|[assets](./assets)|图片存储目录|
-|[digests_daily](./digests_daily)|群内精华问答和碎片思考记录|
-|[thinking_monthly](./thinking_monthly)|每月思考记录|
+-------
 
-## 介绍
+LeetCode项目是 LeetCode、剑指Offer、程序员面试金典刷题笔记`C++`、`Javascript`、`Golang`、`Java`、`Python`实现😍，按照学习计划进行打卡学习，可以保证你有条理、有针对性的梳理算法。
 
-此项目为[编程大队](https://t.zsxq.com/rvBMzRv)小伙伴合作完成，记录每月思考、每周算法、每周分享等等的地方。
+### 致谢以下伙伴对LeetCode的贡献
 
-后续会更新关于各种技术方向的知识建设。
+* [@flipped598](https://github.com/flipped598)
+* [@MarcusYZ](https://github.com/MarcusYZ)
+* [@muggleCY](https://github.com/muggleCY)
 
-## 我们的目标
 
-- 围绕找工作、跳槽方法论、深化职场技能+内功+工具+包装、升职加薪、职场突围
-- 更底层的目标是成为一个更好的自己、技术人/it人。
-- 建立一个最牛逼的Ip。
+#### LeetCode题目清单
 
-## 如何参与协作？
+刷题平台：[LeetCode中国](https://leetcode-cn.com/problemset/all/)
+
+##### Array(数组)
+
+| ID   | Difficulty |                  Title                   |                  Golang                  |                   Python                   |                   Blog                   |
+| ---- | :--------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: |
+| 1013 | Easy | Partition Array Into Three Parts With Equal Sum  | [Golang](LeetCode/Array/1013.Partition_Array_Into_Three_Parts_With_Equal_Sum/1013.go)  / [test](LeetCode/Array/1013.Partition_Array_Into_Three_Parts_With_Equal_Sum/1013_test.go) | / | [博客思路讲解](https://coding3min.com/663.html) |
+
+
+##### Stack(栈)
+
+| ID   | Difficulty |                  Title                   |                  Golang                  |                   Python                   |                   Blog                   |
+| ---- | :--------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: |
+| 20 | Easy | Valid Parentheses  | [Golang](LeetCode/Stack/20.Valid_Parentheses/20.go)  / [test](LeetCode/Stack/20.Valid_Parentheses/20_test.go) | / | [博客思路讲解](https://coding3min.com/565.html) |
+
+
+##### Hash Table(哈希表)
+
+| ID   | Difficulty |                  Title                   |                  Golang                  |                   Python                   |                   Blog                   |
+| ---- | :--------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: |
+| 1160 | Easy | Find Words That Can Be Formed by Characters  | [Golang](LeetCode/HashTable/1160.Find_Words_That_Can_Be_Formed_by_Characters/1160.go)  / [test](LeetCode/HashTable/1160.Find_Words_That_Can_Be_Formed_by_Characters/1160_test.go) | / | [博客思路讲解](https://coding3min.com/680.html) |
+| 409 | Easy|  Longest Palindrome |[Golang](LeetCode/HashTable/409.Longest_Palindrome/409.Longest_Palindrome.go) / [test](LeetCode/HashTable/409.Longest_Palindrome/409.Longest_Palindrome_test.go)| / | [博客思路讲解](https://coding3min.com/688.html) |
+
+##### Backtracking(回溯算法)
+
+| ID   | Difficulty |                  Title                   |                  Golang                  |                   Python                   |                   Blog                   |
+| ---- | :--------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: |
+| 46 | Medium | Permutations  | [Golang](./LeetCode/Backtracking/46.Permutations/46.go) / [test](./LeetCode/Backtracking/46.Permutations/46_test.go) | / | [博客思路讲解](https://coding3min.com/634.html) |
+
+
+#### 剑指Offer题目清单
+
+刷题平台：[LeetCode中国剑指Offer](https://leetcode-cn.com/problemset/lcof/)
+
+| ID   | Difficulty |                  Title                   |                  Golang                  |                   Python                    |                   Blog                   |
+| ---- | :--------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: |
+| 面试题57 - II| Easy | 和为s的连续正数序列 | [Golang](./Offer/57/57_2.go) / [test](./Offer/57/57_2_test.go) | 	/ |	[博客思路讲解](https://coding3min.com/613.html)|
+
+
+
+
+#### 程序员面试金典题目清单
+
+刷题平台：[LeetCode中国剑程序员面试金典](https://leetcode-cn.com/problemset/lcci/)
+
+| ID   | Difficulty |                  Title                   |                  Golang                  |                   Python                    |                   Blog                   |
+| ---- | :--------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: |
+| 面试题 01.06. | Easy | 字符串压缩 | [Golang](./FaceGold/String/01.06.Compress_String_LCCI.go) / [test](./FaceGold/String/01.06.Compress_String_LCCI_test.go) | 	/ |	[博客思路讲解](https://coding3min.com/675.html)|
+
+
+### 如何参与协作？
 
 - 如果你不会使用`git`，参考 [每天三分钟玩转Git](https://mp.weixin.qq.com/s/ReD6suGmPvEmd5wKdylR2w)
-- 如果有想法和创意，请提[issue](https://github.com/coding3min/coding3min/issues)或者进群提
-- 如果想贡献代码，请提[PR](https://github.com/coding3min/coding3min/pulls)
+- 如果有想法和创意，请提[issue](https://github.com/coding3min/LeetCode/issues)或者进群提
+- 如果想贡献代码，请提[PR](https://github.com/coding3min/LeetCode/pulls)
 - 如果需要修改项目中图片，这里存放了项目中绘制图的源代码， 大家可以用[draw.io](https://www.draw.io/)打开进行编辑。
 
 写作规范参考：[中文技术文档的写作规范](https://github.com/ruanyf/document-style-guide)
 
-## 加入我们
 
-我们聚集的地方：[知识星球](https://t.zsxq.com/rvBMzRv)
+### 目录作用说明
 
-我们的公众号
+|目录名称|  作用 |
+|---|---|
+|[algorithm](./algorithm)|记录算法相关内容：每周算法、面试常用算法题解、leetcode题解|
+|[assets](./assets)|图片存储目录，请创建相应目录存储图片|
 
-![编程三分钟](assets/simple.png)
+### 寻求帮助
 
+* 哪有那么多人生开挂，不过都是厚积薄发。
+* 我的博客：https://blog.csdn.net/BTnode
+* 我的个人网站：https://coding3min.com
+* Email: [coding3min@foxmail.com](mailto:coding3min@foxmail.com)
+* 我的个人微信，备注 ”加算法项目群“
 
-## 关于我
+<div align="center"><img border="0" src="assets/4381596508117_.pic_hd.jpg" alt="Coder" title="gongzhonghao" with="200" height="200"></div>
 
-【昵称】小熊
-
-【城市】深圳
-
-【微信】细心的你一定能找得到
-
-【个人介绍】我是来自腾讯的工程师，腾讯私有全栈云团队的云监控负责人，平时最大的爱好就是看书写文弹吉他，特别幸运能和大家在一起，希望未来的日子里我们一起开心一起难过一起进步。
-
-【能解决的问题/专精领域】云监控、openstack、k8s 方向，编程语言略懂c/c++、python、go、java。
-
-【可提供资源】我具有丰富的运维、实施、架构、CI/CD方面的经验，还会一些算法、产品设计和一些骚操作，欢迎大家向我提问探讨，如果需要找工作的同学我和我的朋友们可以帮大家提供一些内推机会。
-
-【创建星球原因】近两年有幸认识了不少优秀的人，越来越能感受到圈子对人的影响，人以群分，能组织一群优秀的人在一起，一起为了彼此变得更好而努力是多么幸福的一件事情。
+* 公众号分享开发、运维、云技术以及我的职业生涯思考，欢迎关注~！
 
 
-## 鸣谢
-
-感谢为这个项目作出贡献的所有[小伙伴](https://github.com/coding3min/coding3min/graphs/contributors)
-
-## 开源协议
-
-Apache2.0协议 意思是**需要注明原项目出处**
-
+<div align="center"><img border="0" src="https://coding3min.oss-accelerate.aliyuncs.com/coding3min/2020-03-06-115447.jpg" alt="Coder" title="gongzhonghao" with="200" height="200"></div>
