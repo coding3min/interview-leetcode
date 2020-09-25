@@ -71,11 +71,9 @@ LeetCode项目是 LeetCode、剑指Offer、程序员面试金典刷题笔记`C++
 | 面试题57 - II| Easy | 和为s的连续正数序列 | [Golang](./Offer/57/57_2.go) / [test](./Offer/57/57_2_test.go) | 	/ |	[博客思路讲解](https://coding3min.com/613.html)|
 
 
-
-
 #### 程序员面试金典题目清单
 
-刷题平台：[LeetCode中国剑程序员面试金典](https://leetcode-cn.com/problemset/lcci/)
+刷题平台：[LeetCode中国程序员面试金典](https://leetcode-cn.com/problemset/lcci/)
 
 | ID   | Difficulty |                  Title                   |                  Golang                  |                   Python                    |                   Blog                   |
 | ---- | :--------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: |
@@ -91,7 +89,6 @@ LeetCode项目是 LeetCode、剑指Offer、程序员面试金典刷题笔记`C++
 
 写作规范参考：[中文技术文档的写作规范](https://github.com/ruanyf/document-style-guide)
 
-
 ### 目录作用说明
 
 |目录名称|  作用 |
@@ -102,14 +99,9 @@ LeetCode项目是 LeetCode、剑指Offer、程序员面试金典刷题笔记`C++
 ### 寻求帮助
 
 * 哪有那么多人生开挂，不过都是厚积薄发。
-* 我的博客：https://blog.csdn.net/BTnode
-* 我的个人网站：https://coding3min.com
+* CSDN博客：https://blog.csdn.net/BTnode
+* 网站：https://coding3min.com
 * Email: [coding3min@foxmail.com](mailto:coding3min@foxmail.com)
-* 我的个人微信，备注 ”加算法项目群“
+* 我的个人微信，备注 ”加群“ 
 
 <div align="center"><img border="0" src="assets/4381596508117_.pic_hd.jpg" alt="Coder" title="gongzhonghao" with="200" height="200"></div>
-
-* 公众号分享开发、运维、云技术以及我的职业生涯思考，欢迎关注~！
-
-
-<div align="center"><img border="0" src="https://coding3min.oss-accelerate.aliyuncs.com/coding3min/2020-03-06-115447.jpg" alt="Coder" title="gongzhonghao" with="200" height="200"></div>
