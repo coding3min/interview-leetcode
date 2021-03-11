@@ -7,4 +7,5 @@
 * [面试高频问题-go](interview/go.md)
 * [面试高频问题-redis](interview/redis.md)
 * [面试高频问题-mysql](interview/mysql.md)
+* [协作办法](leetcode-vscode.md)
 

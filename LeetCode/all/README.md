@@ -1,0 +1,1 @@
+请使用 vscode 中的 [LeetCode 插件](leetcode-vscode.md)，自动创建文件、手动提交测试

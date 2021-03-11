@@ -5,7 +5,7 @@
 
 总计26题，题目列表请戳 [LeetCode Hot100 easy 列表](https://leetcode-cn.com/problemset/leetcode-hot-100/?difficulty=%E7%AE%80%E5%8D%95)。
 
-全部源码可见我的GitHub (LeetCode)(https://github.com/minibear2333/LeetCode)
+全部源码可见我的GitHub [interview-leetcode](https://github.com/minibear2333/interview-leetcode)
 
 注：
 
