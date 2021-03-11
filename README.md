@@ -26,11 +26,30 @@
 
 * 如果你想和我一起刷算法，欢迎提pr
 
-* 请使用 vscode 中的 LeetCode 插件，自动创建文件、手动提交测试
+* 请使用 vscode 中的 [LeetCode 插件](leetcode-vscode.md)，自动创建文件、手动提交测试
 
 -------
 
-`interview-leetcode` 项目旨在快速复习找到工作，包括高频算法和真实面试问题汇总
+### 简介与目录
+
+`interview-leetcode` 项目旨在快速复习找到工作，包括高频算法和真实面试问题汇总，电子书见 [小熊的面试大全电子书](https://minibear2333.gitbook.io/interview-leetcode/)
+
+**算法**
+
+|目录 |说明|
+|:-----|:-----|
+|[hot100](./LeetCode/hot100/README.md)|LeetCode 100道热门题目，建议最先刷完|
+|剑指Offer|建议刷完hot100扣刷|
+|[全部题目](./LeetCode/all)|所有题目汇总|
+
+**面试高频问题大全**
+
+* [面试高频问题-操作系统](interview/操作系统.md)
+* [面试高频问题-linux](interview/linux.md)
+* [面试高频问题-go](interview/go.md)
+* [面试高频问题-redis](interview/redis.md)
+* [面试高频问题-mysql](interview/mysql.md)
+
 
 ### 致谢以下伙伴对interview-leetcode的贡献
 
@@ -52,3 +71,11 @@
 * CSDN博客：https://blog.csdn.net/BTnode
 * 网站：https://coding3min.com
 * Email: [coding3min@foxmail.com](mailto:coding3min@foxmail.com)
+
+### 最后
+
+如果文中有误，欢迎提pr或者issue，**一旦合并或采纳作为贡献奖励可以联系我直接无门槛**加入[技术交流群](https://mp.weixin.qq.com/s/ErQFjJbIsMVGjIRWbQCD1Q)
+
+我是小熊，关注我，知道更多不知道的技术
+
+![gQDiQ51116](https://coding3min.oss-accelerate.aliyuncs.com/2021/03/11/gQDiQ51116.jpg)
