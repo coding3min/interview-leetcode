@@ -49,6 +49,7 @@
 * [面试高频问题-go](interview/go.md)
 * [面试高频问题-redis](interview/redis.md)
 * [面试高频问题-mysql](interview/mysql.md)
+* [面试高频问题-待解答](interview/todo.md)
 
 
 ### 致谢以下伙伴对interview-leetcode的贡献
@@ -62,6 +63,7 @@
 - 如果你不会使用`git`，参考 [每天三分钟玩转Git](https://mp.weixin.qq.com/s/ReD6suGmPvEmd5wKdylR2w)
 - 如果有想法和创意，请提[issue](https://github.com/coding3min/LeetCode/issues)或者进群提
 - 如果想贡献代码，请提[PR](https://github.com/coding3min/LeetCode/pulls)
+- 算法刷题请使用vscode [LeetCode 插件](leetcode-vscode.md)
 
 写作规范参考：[中文技术文档的写作规范](https://github.com/ruanyf/document-style-guide)
 
@@ -78,4 +80,4 @@
 
 我是小熊，关注我，知道更多不知道的技术
 
-![gQDiQ51116](https://coding3min.oss-accelerate.aliyuncs.com/2021/03/11/gQDiQ51116.jpg)
+![](https://coding3min.oss-accelerate.aliyuncs.com/2021/03/11/gQDiQ51116.jpg)
