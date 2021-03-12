@@ -33,17 +33,39 @@
 
 // @lc code=start
 func findDisappearedNumbers(nums []int) []int {
-	queryMap := make([]int,len(nums))
 	for _,v := range nums{
-		queryMap[v-1] = 1
+		x := nums[abs(v)-1]
+		nums[abs(v)-1] = -abs(x)
 	}
 	var res []int
-	for k,v := range queryMap{
-		if v==0{
+	for k,v := range nums{
+		if v>0{
 			res = append(res,k+1)
 		}
 	}
 	return res
 }
+
+func abs(x int) int{
+	if x<0{
+		x = -x
+	}
+	return x
+}
+
+// hash表
+// func findDisappearedNumbers(nums []int) []int {
+// 	queryMap := make([]int,len(nums))
+// 	for _,v := range nums{
+// 		queryMap[v-1] = 1
+// 	}
+// 	var res []int
+// 	for k,v := range queryMap{
+// 		if v==0{
+// 			res = append(res,k+1)
+// 		}
+// 	}
+// 	return res
+// }
 // @lc code=end
 

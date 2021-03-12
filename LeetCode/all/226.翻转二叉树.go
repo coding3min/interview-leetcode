@@ -49,40 +49,42 @@
  *     Right *TreeNode
  * }
  */
+// 递归
 func invertTree(root *TreeNode) *TreeNode {
-	if root==nil{
-		return nil
+    if root == nil{
+		return root
 	}
-	stack := []*TreeNode{root}
-	stackBefore := []*TreeNode{}
-	for len(stack)>0{
-		n := len(stack)
-		for i:=0;i<n;i++{
-			node := stack[0]
-			stack = stack[1:]
-			if node == nil{
-				continue
-			}
-			stackBefore = append([]*TreeNode{node},stackBefore...)
-			if node.Left != nil{
-				stack = append(stack,node.Left)
-			}else{
-				stack = append(stack,nil)
-			}
-			if node.Right!=nil{
-				stack = append(stack,node.Right)
-			}else{
-				stack = append(stack,nil)
-			}
-		}
-		for i:=0;i<len(stackBefore);i++{
-			stackBefore[i].Left = stack[len(stack) - 1 - i*2]
-			stackBefore[i].Right = stack[len(stack) - 1 - i*2 - 1]
-			// fmt.Println(stackBefore[i].Val,stackBefore[i].Left.Val,stackBefore[i].Right.Val)
-		}
-		stackBefore = []*TreeNode{}
-	}
+	left := invertTree(root.Left)
+	right := invertTree(root.Right)
+	root.Left = right
+	root.Right = left
 	return root
 }
+// 非递归，不推荐
+// func invertTree(root *TreeNode) *TreeNode {
+// 	if root == nil{
+// 		return root
+// 	}
+// 	stack := []*TreeNode{root}
+// 	stackBefore := []*TreeNode{} 
+// 	for len(stack)>0{
+// 		n := len(stack)
+// 		for i:=0;i<n;i++{
+// 			node := stack[0]
+// 			stack = stack[1:]
+// 			if node == nil{
+// 				continue
+// 			}
+// 			stackBefore = append([]*TreeNode{node},stackBefore...)
+// 			stack = append(stack,node.Left)
+// 			stack = append(stack,node.Right)
+// 		}
+// 		for i:=0;i<len(stackBefore);i++{
+// 			stackBefore[i].Left = stack[len(stack)-1-i*2]
+// 			stackBefore[i].Right = stack[len(stack)-1-i*2-1]
+// 		}
+// 	}
+// 	return root
+// }
 // @lc code=end
 

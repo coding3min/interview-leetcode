@@ -82,35 +82,54 @@
  * }
  */
 func getIntersectionNode(headA, headB *ListNode) *ListNode {
-    if headA == nil || headB == nil{
-		return nil
-	}
-	q,p := headA,headB
-	for q.Next!=nil && p.Next!=nil{
-		q = q.Next
-		p = p.Next
-	}
-	var curr *ListNode
-	if q.Next == nil{
-		curr = p
-		q,p = headB,headA
-	}else{
-		curr = q
-		q,p = headA,headB
-	}
-
-	for curr.Next!=nil{
-		curr = curr.Next
-		q = q.Next
-	}
-	for q!=nil&&p!=nil{
-		if p == q{
-			return p
+	p,q := headA,headB
+	for p!=q{
+		if p == nil{
+			p = headB
+		}else{
+			p = p.Next
 		}
-		p = p.Next
-		q = q.Next
+		if q == nil{
+			q = headA
+		}else{
+			q = q.Next
+		}
+		if q==nil && p == nil{
+			return nil
+		}
 	}
-	return nil
+	return p
 }
+
+ // 笨办法，直观
+// func getIntersectionNode(headA, headB *ListNode) *ListNode {
+// 	if headA == nil || headB == nil{
+// 		return nil
+// 	}
+// 	q,p := headA,headB
+// 	for q!=nil&&p!=nil{
+// 		q=q.Next
+// 		p=p.Next
+// 	}
+// 	if q!=nil{
+// 		return getNode(q,headA,headB)
+// 	}
+// 	return getNode(p,headB,headA)
+// }
+
+// func getNode(curr,long, short *ListNode) *ListNode{
+// 	for curr !=nil && long !=nil{
+// 		curr = curr.Next
+// 		long = long.Next
+// 	}
+// 	for long!=nil && short!=nil{
+// 		if long == short{
+// 			return long
+// 		}
+// 		long = long.Next
+// 		short = short.Next
+// 	}
+// 	return nil
+// }
 // @lc code=end
 

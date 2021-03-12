@@ -57,7 +57,21 @@
 
 // @lc code=start
 func isValid(s string) bool {
-
+	var stack []byte
+	queryMap := map[byte]byte{'{':'}','[':']','(':')'}
+	for i := range s{
+		if _,ok := queryMap[s[i]];ok{
+			stack = append(stack,s[i])
+		}else{
+			n := len(stack)
+			if n>0 && queryMap[stack[len(stack)-1]] == s[i]{
+				stack = stack[:n-1]
+			}else{
+				return false
+			}
+		}
+	}
+	return len(stack) == 0
 }
 // @lc code=end
 

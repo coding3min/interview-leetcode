@@ -44,15 +44,28 @@
 
 // @lc code=start
 func majorityElement(nums []int) int {
-	queryMap := make(map[int]int)
-	n := len(nums)
+	var count,num int
 	for _,v := range nums{
-		queryMap[v]++
-		if queryMap[v]> n/2{
-			return v
+		if count == 0 || v == num{
+			num = v
+			count++
+		}else{
+			count--
 		}
 	}
-	return 0
+	return num
 }
+
+// func majorityElement(nums []int) int {
+// 	queryMap := make(map[int]int)
+// 	n := len(nums)
+// 	for _,v := range nums{
+// 		queryMap[v]++
+// 		if queryMap[v]> n/2{
+// 			return v
+// 		}
+// 	}
+// 	return 0
+// }
 // @lc code=end
 
