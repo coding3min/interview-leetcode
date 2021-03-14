@@ -97,6 +97,42 @@ ps -T -p 722
 top -H -p 722
 ```
 
+### 获取URL中协议、域名、端口和Path
+
+``` BASH
+#获取协议
+echo "http://www.baidu.com:80/ABCD/a.txt" | awk -F':' '{print $1}'
+# 输出http
+
+#获取域名
+echo "http://www.baidu.com:80/ABCD/a.txt" | awk -F'[/:]' '{print $4}'
+# 输出：www.baidu.com
+
+#获取端口
+echo "http://www.baidu.com:80/ABCD/a.txt" | awk -F'[/:]' '{print $5}'
+# 输出 80
+
+#获取Path
+echo "http://www.baidu.com:80/ABCD/a.txt" | cut -d/ -f4-
+# 输出 ABCD/a.txt
+```
+
+### 如果linux系统卡死，操作系统比较慢，排查思路？
+
+* 先使用top实时查看一下进程占cpu以及内存的情况，因为top是实时刷新的，比较直观
+* 有时候刷新太快，进一步使用`ps -aux`可以查看哪些进程占cpu或者内存较高，如果需要急切恢复，可以`kill -9`杀进程来恢复。
+* 有可能此进程只是一个子进程，那要使用`ps -ef | grep 进程ID`查找父进程
+
+看哪些日志
+
+* messages日志，`/var/log`目录下，比较全，关键字`failed`、`error`、`false`，查看开机时间`Runtime journal`
+* 服务日志
+* dmesg日志，该日志是记录系统最近一次开机时加载的驱动信息，以及开机后键鼠等硬件的一些响应信息
+* 如果是图形化服务器，查看`Xorg.0.log`日志，该日志是记录的图形化服务相关的一些日志信息，看一下图形化服务方面有什么异常没
+* `.xsession-errors`日志，`root`用户在`/root`下，普通用户在`/home/username/`下），是隐藏文件，该日志信息是某用户环境下的图形化日志信息
+* `lightdm.log`日志，该日志是和登录界面相关的一些日志信息，如果系统卡死的时候是在用户登录界面的时候卡死了，这个日志就有必要也看一眼
+* 最后有可能是硬件问题
+
 ### 最后
 
 如果文中有误，欢迎提pr或者issue，**一旦合并或采纳作为贡献奖励可以联系我直接无门槛**加入[技术交流群](https://mp.weixin.qq.com/s/ErQFjJbIsMVGjIRWbQCD1Q)

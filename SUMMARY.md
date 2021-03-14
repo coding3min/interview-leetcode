@@ -9,7 +9,7 @@
 * [面试高频问题-mysql](interview/mysql.md)
 * [面试高频问题-网络](interview/网络.md)
 * [面试高频问题-docker](interview/docker.md)
-* [TODO面试高频问题-k8s](interview/k8s.md)
+* [面试高频问题-k8s](interview/k8s.md)
 * [TODO面试高频问题-前端](interview/前端.md)
 * [TODO面试高频问题-mongoDB](interview/mongoDB.md)
 * [项目一般问什么](项目问什么.md)
