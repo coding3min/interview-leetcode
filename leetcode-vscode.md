@@ -1,6 +1,6 @@
 ### 下载插件
 
-直接在vscode中搜索`LeetCode`插件完成下载，并登陆账号，修改配置如下
+直接在vscode中搜索 `LeetCode` 插件完成下载，并登陆账号，修改配置如下
 
 ### 修改配置
 
@@ -8,7 +8,7 @@
 
 ![](https://coding3min.oss-accelerate.aliyuncs.com/2021/03/11/bPYrXp1720.png)
 
-修改插件配置，设置文件夹目录为`LeetCode/all`，这样才会自动创建go文件在此
+修改插件配置，设置文件夹目录为 `LeetCode/all` ，这样才会自动创建go文件在此
 
 ``` json
 "leetcode.filePath": {
