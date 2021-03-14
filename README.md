@@ -32,23 +32,31 @@
 
 ### 简介与目录
 
-`interview-leetcode` 项目旨在快速复习找到工作，包括高频算法和真实面试问题汇总，电子书见 [小熊的面试大全电子书](https://minibear2333.gitbook.io/interview-leetcode/)
+`interview-leetcode` 项目旨在快速复习找到工作，包括高频算法和真实面试问题汇总，电子书见->[小熊的面试大全电子书](https://leetcode.coding3min.com), 备用地址见->[电子书备用地址](https://minibear2333.gitbook.io/interview-leetcode/)
+
+当然这些基本知识，也是工程师的学习素养，全部掌握对于工作来说也会有极大的帮助
 
 **算法**
 
 |目录 |说明|
 |:-----|:-----|
-|[hot100](./LeetCode/hot100/README.md)|LeetCode 100道热门题目，建议最先刷完|
+|[LeetCode-hot100](./LeetCode/hot100/README.md)|LeetCode 100道热门题目，建议最先刷完|
 |剑指Offer|建议刷完hot100扣刷|
 |[全部题目](./LeetCode/all)|所有题目汇总|
 
 **面试高频问题大全**
+
+复习的时候注意反思节奏，用过没，是什么，哪个更好，为什么可以这样，他怎么实现的
 
 * [面试高频问题-操作系统](interview/操作系统.md)
 * [面试高频问题-linux](interview/linux.md)
 * [面试高频问题-go](interview/go.md)
 * [面试高频问题-redis](interview/redis.md)
 * [面试高频问题-mysql](interview/mysql.md)
+* [面试高频问题-网络](interview/网络.md)
+* [面试高频问题-docker](interview/docker.md)
+* [TODO面试高频问题-前端](interview/前端.md)
+* [TODO面试高频问题-mongoDB](interview/mongoDB.md)
 * [面试高频问题-待解答](interview/todo.md)
 
 

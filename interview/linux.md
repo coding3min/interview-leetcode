@@ -90,6 +90,8 @@ lsof -d 4 显示使用fd为4的进程
 
 lsof -i [i] 用以显示符合条件的进程情况
 
+
+
 ### 最后
 
 如果文中有误，欢迎提pr或者issue，**一旦合并或采纳作为贡献奖励可以联系我直接无门槛**加入[技术交流群](https://mp.weixin.qq.com/s/ErQFjJbIsMVGjIRWbQCD1Q)
