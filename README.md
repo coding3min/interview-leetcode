@@ -7,7 +7,7 @@
 ![stars](https://img.shields.io/github/stars/minibear2333/interview-leetcode.svg)
 ![forks](https://img.shields.io/github/forks/minibear2333/interview-leetcode.svg)
 
-[![Travis](https://img.shields.io/badge/language-Golang-orange.svg)]()
+![Travis](https://img.shields.io/badge/language-Golang-orange.svg)
 <!-- 
 [![Travis](https://img.shields.io/badge/language-C++-green.svg)]()
 [![Travis](https://img.shields.io/badge/language-JavaScript-yellow.svg)]()
@@ -55,10 +55,11 @@
 * [面试高频问题-mysql](interview/mysql.md)
 * [面试高频问题-网络](interview/网络.md)
 * [面试高频问题-docker](interview/docker.md)
+* [面试高频问题-k8s](interview/k8s.md)
 * [TODO面试高频问题-前端](interview/前端.md)
 * [TODO面试高频问题-mongoDB](interview/mongoDB.md)
+* [项目一般问什么](项目问什么.md)
 * [面试高频问题-待解答](interview/todo.md)
-
 
 ### 致谢以下伙伴对interview-leetcode的贡献
 
