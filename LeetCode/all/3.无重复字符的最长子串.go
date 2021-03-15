@@ -62,44 +62,28 @@
 
 // @lc code=start
 func lengthOfLongestSubstring(s string) int {
-    sArray := strings.Split(s,"")
-    // map用来存储当前字符上一次出现的下标
-    countMap := make(map[string]int)
-    startIndex,maxLen := -1,0
-    for k,v := range sArray{
-        // 如果当前字符在之前出现过，还要保证是在当前子串内部，而不是之前出现的才算是重复
-        if _,ok := countMap[v];ok && countMap[v] > startIndex  {
-            // 如果是出现重复
-            startIndex = countMap[v]
-            countMap[v] = k
-        }else{
-            countMap[v] = k
-            if k - startIndex > maxLen{
-                maxLen = k - startIndex
-            }
-        }
+    if len(s) == 0{
+        return 0
     }
-    return maxLen
+    // map用来存储当前字符上一次出现的下标
+   queryMap := make(map[byte]int)
+   // startIndex是字符串起始位置，maxLen是最大不重复子串长度
+   startIndex,maxLen := 0,1
+   for k := range s{
+       v := s[k]
+        // 如果当前字符在之前出现过，还要保证是在当前子串内部，而不是之前出现的才算是重复
+       if _,ok := queryMap[v];ok && queryMap[v]>= startIndex{
+            // 字符串起始位置应该是上一次重复字符的后一位
+            startIndex = queryMap[v]+1
+       }else{
+           // 起始位置到当前字符的长度需要加1
+           if k-startIndex+1 > maxLen{
+               maxLen = k - startIndex+1
+           }
+       }
+       queryMap[v] = k
+   }
+   return maxLen
 }
-
-// func lengthOfLongestSubstring(s string) int {
-//     sArray := strings.Split(s,"")
-//     startIndex,maxLen := 0,0
-//     for k,_ := range sArray{
-//         len := 1
-//         for j := startIndex; j<k;j++{
-//             if sArray[j]!=sArray[k]{
-//                 len++
-//             }else{
-//                 startIndex = j+1
-//                 break
-//             }
-//         } 
-//         if len>maxLen{
-//             maxLen = len
-//         }
-//     }
-//     return maxLen
-// }
 // @lc code=end
 

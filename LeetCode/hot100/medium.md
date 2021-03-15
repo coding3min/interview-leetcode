@@ -1,0 +1,102 @@
+### 介绍
+
+一句话总结算法思路，LeetCode hot100 medium
+
+按频率排序，排序依据参考 [字节跳动后端高频面试题目](https://github.com/afatcoder/LeetcodeTop/blob/master/bytedance/backend.md)。
+
+全部源码可见我的GitHub [interview-leetcode](https://github.com/minibear2333/interview-leetcode/tree/master/LeetCode/all)
+
+注：
+
+有下划线标志的都是超链接。
+点击下列题目标题可以跳转到LeetCode中文官网直接阅读题目，提交代码。
+点击下列代码链接，可以直接跳转到我的GitHub代码页面。每道题一般精选一种解法，我的GitHub中可能收录多种解法代码，请自行查看。
+
+### 题解
+
+算法思维：
+* 进入函数优先考虑边界
+* 如果出现循环，进入循环时考虑`break`条件和`continue`条件
+* 使用下标计算长度时，优先考虑区间的开闭，
+
+#### 3.无重复字符的最长子串
+
+题目：[在字符串中找一个子串，要求连续无重复字符且最长，只需要返回最大长度](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/description/)
+
+题解：
+
+* 字符串长度为0直接返回
+* 记录最大子串的长度，用来和新子串长度比较，维护子串的状态还需要记录当前子串的起始位置的下标
+* 使用map来储存字符对应的下标，
+* 只要当前字符出现在map里，同时map里的字符就是子串里的字符时（存储的字符下标大于等于起始位置下标）说明重复，更新子串起始位置为map中记录的重复点+1
+* else (没有出现在子串里)，子串长度++，判断更新最大长度(注意更新时+1)
+
+代码：[golang](../all/3.无重复字符的最长子串.go)
+
+### 215.数组中的第k个最大元素
+
+题目：[数组中的第k个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/description/)
+
+实际上这一题是在考察对堆排序的扎实程度，用其他解法面试官都不会特别满意的，建议啃下来
+
+题解：
+方法1，不推荐
+* 求第K大的数，实际上就是取小根堆的根节点
+* 小根堆的性质，根节点比所有叶子节点更小
+
+注意：这里为什么用堆，是因为堆是一个完全二叉树，而二叉搜索树不自平衡
+方法2 快速排序变形（快速选择算法）
+
+为什么推荐用快选，因为空间O1，时间On~On^2比堆的时间Onlogn和Ologk更快，但是快排也有局限性
+
+* 快选需要修改原数组，如果原数组不能修改的话，还需要拷贝一份数组，空间复杂度就上去了。
+* 堆只需要保存 k 个元素的小根堆。快速排序变形的方法如果不允许修改原数组那就要保存下来所有的数据，所以数据量大时用堆更好
+
+引用：[优劣比较](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/tu-jie-top-k-wen-ti-de-liang-chong-jie-fa-you-lie-/)
+
+代码：[golang](../all/215.数组中的第k个最大元素.go)
+
+#### 15.三数之和
+
+题目：[数组里有没有三个数加起来为0，找出所有可能的情况](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/description/)
+
+题解：
+* 先把数组排序
+* 从小到大遍历这个数组，每次取一个元素，将这个元素的相反数设为`target`
+* 在每次遍历中，使用双指针对当前元素的后面的所有元素进行处理，找到所有两个元素的和为`target`，这样，三个元素的和就是 0
+* 双指针的具体处理方式为：头尾各一个指针，每次判断两个指针所指的元素的和与target的大小，如果和小了，左指针右移；如果和大了，右指针左移，直到两个指针相遇
+
+注意：
+* 因为不能有重复的结果，所以前后两次遍历取的元素如果相等，要采取跳过的操作
+* 在第三步中，对当前元素的后面的所有元素进行处理的原因是，前面的元素已经找到了所有符合条件的可能，不需要再找
+
+代码：[golang](../all/15.三数之和.go)
+引用：[【LeetCode】15#三数之和](https://zhuanlan.zhihu.com/p/53519899)
+
+### 
+
+题目：[]()
+
+题解：
+
+注意：
+
+代码：[golang](..)
+
+### 
+
+题目：[]()
+
+题解：
+
+注意：
+
+代码：[golang](..)
+
+### 最后
+
+如果文中有误，欢迎提pr或者issue，**一旦合并或采纳作为贡献奖励可以联系我直接无门槛**加入[技术交流群](https://mp.weixin.qq.com/s/ErQFjJbIsMVGjIRWbQCD1Q)
+
+我是小熊，关注我，知道更多不知道的技术
+
+![](https://coding3min.oss-accelerate.aliyuncs.com/2021/03/11/gQDiQ51116.jpg)
