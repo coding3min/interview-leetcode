@@ -12,11 +12,11 @@
 perf top -g -p 246
 ```
 
-![](https://coding3min.oss-accelerate.aliyuncs.com/2021/03/08/m7R1Bu1111.jpg)
+![](../res/2021-03-17-19-59-30.png)
 
 这里推荐
 
-![优惠口令： Happy2021](https://tva1.sinaimg.cn/large/008eGmZEgy1goeyrj9dgrj30u01hdnpd.jpg)
+![优惠口令： Happy2021](../res/2021-03-17-19-59-39.png)
 
 ### 什么是程序的堆空间和栈空间？
 
@@ -139,4 +139,4 @@ echo "http://www.baidu.com:80/ABCD/a.txt" | cut -d/ -f4-
 
 我是小熊，关注我，知道更多不知道的技术
 
-![](https://coding3min.oss-accelerate.aliyuncs.com/2021/03/11/gQDiQ51116.jpg)
+![](../res/2021-03-17-19-57-33.png)

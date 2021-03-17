@@ -2,7 +2,7 @@
 
 zset 有序且唯一，在跳表以空间换时间 以冗余的链表换取效率
 
-![](https://coding3min.oss-accelerate.aliyuncs.com/2021/03/08/Xw0RLM1111.jpg)
+![](../res/2021-03-17-19-59-16.png)
 
 ### 为什么要用跳表不用B+树的结构呢？
 
@@ -88,4 +88,4 @@ jing
 
 我是小熊，关注我，知道更多不知道的技术
 
-![](https://coding3min.oss-accelerate.aliyuncs.com/2021/03/11/gQDiQ51116.jpg)
+![](../res/2021-03-17-19-57-33.png)

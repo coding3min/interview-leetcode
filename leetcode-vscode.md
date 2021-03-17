@@ -4,9 +4,9 @@
 
 ### 修改配置
 
-![](https://coding3min.oss-accelerate.aliyuncs.com/2021/03/11/zZk98R1719.png)
+![](res/2021-03-17-20-12-34.png)
 
-![](https://coding3min.oss-accelerate.aliyuncs.com/2021/03/11/bPYrXp1720.png)
+![](res/2021-03-17-20-12-43.png)
 
 修改插件配置，设置文件夹目录为 `LeetCode/all` ，这样才会自动创建go文件在此
 
@@ -25,4 +25,4 @@
 
 我是小熊，关注我，知道更多不知道的技术
 
-![](https://coding3min.oss-accelerate.aliyuncs.com/2021/03/11/gQDiQ51116.jpg)
+![](res/2021-03-17-19-57-33.png)

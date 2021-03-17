@@ -63,8 +63,8 @@
 写作规范参考：[中文技术文档的写作规范](https://github.com/ruanyf/document-style-guide)
 
 * 如果你不会使用`git`，参考 [每天三分钟玩转Git](https://mp.weixin.qq.com/s/ReD6suGmPvEmd5wKdylR2w)
-* 如果有想法和创意，请提[issue](https://github.com/coding3min/LeetCode/issues)或者进群提
-* 如果想贡献代码，请提[PR](https://github.com/coding3min/LeetCode/pulls)
+* 如果有想法和创意，请提[issue](https://github.com/minibear2333/interview-leetcode/issues)或者进群提
+* 如果想贡献代码，请提[PR](https://github.com/minibear2333/interview-leetcode/pulls)
 * 算法刷题请使用vscode [LeetCode 插件](leetcode-vscode.md)，自动创建文件、手动提交测试
 
 ### 致谢
@@ -87,6 +87,6 @@
 
 我是小熊，关注我，知道更多不知道的技术
 
-![](https://coding3min.oss-accelerate.aliyuncs.com/2021/03/11/gQDiQ51116.jpg)
+![](res/2021-03-17-19-57-33.png)
 
 

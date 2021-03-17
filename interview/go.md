@@ -63,4 +63,4 @@ go中的chan 是用锁实现的。所以肯定不会比锁块。
 
 我是小熊，关注我，知道更多不知道的技术
 
-![](https://coding3min.oss-accelerate.aliyuncs.com/2021/03/11/gQDiQ51116.jpg)
+![](../res/2021-03-17-19-57-33.png)

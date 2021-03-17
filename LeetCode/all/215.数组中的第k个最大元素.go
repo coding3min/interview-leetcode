@@ -34,6 +34,7 @@
 
 // @lc code=start
 func findKthLargest(nums []int, k int) int {
+	// 随机数种子
     rand.Seed(time.Now().UnixNano())
     return quickSelect(nums, 0, len(nums)-1, len(nums)-k)
 }
@@ -52,20 +53,27 @@ func quickSelect(a []int, l, r, index int) int {
 //随机中枢
 func randomPartition(a []int, l, r int) int {
     i := rand.Int() % (r - l + 1) + l
+	// 因为把r的位置作为中枢，所以要交换
     a[i], a[r] = a[r], a[i]
     return partition(a, l, r)
 }
 
 //快排核心代码
 func partition(a []int, l, r int) int {
+	// 因为传入的中枢是r位置
     x := a[r]
+	// 先把i设置为l-1区间之外，保证每次更新先++再更新
+	// i 的作用是记录小于中枢的区间
     i := l - 1
+	// j不能遍历到r位置，因为r是中枢本身，查找完之后再做交换
     for j := l; j < r; j++ {
+		// 遍历l到r，保证i左侧包括i位置记录的都小于等于x,右侧全部大于x
         if a[j] <= x {
             i++
             a[i], a[j] = a[j], a[i]
         }
     }
+	// 最后遍历完交换r和i+1位置，把中枢放到正确的地方
     a[i+1], a[r] = a[r], a[i+1]
     return i + 1
 }
