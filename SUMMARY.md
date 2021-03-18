@@ -1,8 +1,11 @@
 # Summary
 
 * [介绍](README.md)
+* [算法面试注意](算法面试注意.md)
+* [项目一般问什么](项目问什么.md)
 * [LeetCode-hot100-easy](LeetCode/hot100/easy.md)
 * [LeetCode-hot100-medium](LeetCode/hot100/medium.md)
+* [其他高频算法](LeetCode/other.md)
 * [面试高频问题-操作系统](interview/操作系统.md)
 * [面试高频问题-linux](interview/linux.md)
 * [面试高频问题-go](interview/go.md)
@@ -13,6 +16,5 @@
 * [面试高频问题-k8s](interview/k8s.md)
 * [TODO面试高频问题-前端](interview/前端.md)
 * [TODO面试高频问题-mongoDB](interview/mongoDB.md)
-* [项目一般问什么](项目问什么.md)
 * [面试高频问题-待解答](interview/todo.md)
 * [协作办法](leetcode-vscode.md)
