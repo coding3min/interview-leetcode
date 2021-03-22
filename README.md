@@ -67,26 +67,18 @@
 * 如果想贡献代码，请提[PR](https://github.com/minibear2333/interview-leetcode/pulls)
 * 算法刷题请使用vscode [LeetCode 插件](leetcode-vscode.md)，自动创建文件、手动提交测试
 
-### 致谢
-
-感谢以下人员对本仓库做出的贡献 💖，如果你希望被添加到这个名单中，并且提过`issue`和`pr`请联系我
-
-<a href="https://github.com/flipped598">
-    <img src="https://avatars.githubusercontent.com/u/28695999?s=120&v=4" width="50px">
-</a> 
-<a href="https://github.com/MarcusYZ">
-    <img src="https://avatars.githubusercontent.com/u/40513247?s=64&v=4" width="50px">
-</a>
-<a href="https://github.com/muggleCY">
-    <img src="https://avatars.githubusercontent.com/u/38399371?s=64&v=4" width="50px">
-</a>
-
 ### 最后
 
 如果文中有误，欢迎提pr或者issue，**一旦合并或采纳作为贡献奖励可以联系我直接无门槛**加入[技术交流群](https://mp.weixin.qq.com/s/ErQFjJbIsMVGjIRWbQCD1Q)
 
-我是小熊，关注我，知道更多不知道的技术
 
-![](res/2021-03-17-19-57-33.png)
+### 致谢
+
+感谢以下人员对本仓库做出的贡献 💖，如果你希望被添加到这个名单中并且提过`issue`和`pr`，请联系我
+
+* [@flipped598](https://github.com/flipped598)
+* [@MarcusYZ](https://github.com/MarcusYZ)
+* [@muggleCY](https://github.com/muggleCY)
+* [@Mona](https://github.com/Mona-Web)
 
 
