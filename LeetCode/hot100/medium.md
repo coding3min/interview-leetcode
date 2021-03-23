@@ -32,8 +32,6 @@
 
 题目：[数组中的第k个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/description/)
 
-实际上这一题是在考察对堆排序的扎实程度，用其他解法面试官都不会特别满意的，建议啃下来
-
 题解：
 方法1，堆排序（不推荐）
 * 求第K大的数，实际上就是取小根堆的根节点

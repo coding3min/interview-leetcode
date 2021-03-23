@@ -1,6 +1,7 @@
 ### 其他高频
 
-### 
+### medium
+### 120.三角形最小路径和
 
 题目：[求三角形的最小路径和](https://leetcode-cn.com/problems/triangle/description/)
 
@@ -37,3 +38,14 @@
 代码：[golang](../LeetCode/all/120.三角形最小路径和.go)
 
 引用：[递归+记忆化+DP](https://leetcode-cn.com/problems/triangle/solution/di-gui-ji-yi-hua-dp-bi-xu-miao-dong-by-sweetiee/)
+
+### difficult
+### 
+
+题目：[]()
+
+题解：
+
+注意：
+
+代码：[golang](../)

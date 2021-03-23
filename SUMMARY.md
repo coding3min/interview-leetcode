@@ -5,6 +5,7 @@
 * [项目一般问什么](项目问什么.md)
 * [LeetCode-hot100-easy](LeetCode/hot100/easy.md)
 * [LeetCode-hot100-medium](LeetCode/hot100/medium.md)
+* [LeetCode-hot100-difficult](LeetCode/hot100/difficult.md)
 * [其他高频算法](LeetCode/other.md)
 * [面试高频问题-操作系统](interview/操作系统.md)
 * [面试高频问题-linux](interview/linux.md)
