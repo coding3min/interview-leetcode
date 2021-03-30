@@ -1,0 +1,31 @@
+{
+    "plugins": [
+        "highlight",
+        "image-zoom",
+        "comment",
+        "copy-code",
+        "sql-table",
+        "dzan",
+        "page-toc-button"
+    ],
+    "pluginsConfig": {
+        "theme-default": {
+            "auto_open": true,
+            "show_nav": true,
+            "logo": {},
+            "navs": [
+                {
+                    "title": "博客",
+                    "url": "https://coding3min.com",
+                    "target": true
+                },
+                {
+                    "title": "下载本文档",
+                    "url": "https://www.kancloud.cn/minibear/interview-leetcode#/dashboard",
+                    "target": true
+                }
+            ]
+        },
+        "highlight": {}
+    }
+}
