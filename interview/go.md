@@ -69,19 +69,41 @@ go中的chan 是用锁实现的。所以肯定不会比锁块。
 
 ### 如果协程A创建了协程B和C，B协程panic了，A协程有recover，会发生什么？
 
-### 如何实现一个分布式id分发器？
+无法在父协程中捕获子协程的panic
 
-### 如何实现秒杀系统？
+```go
+func main() {
+	// 希望捕获所有所有 panic
+	defer func () {
+	r := recover()
+		fmt.Println("捕获到子协程panic:",r)
+	}()
 
-### 如何保证rabbitmq集群数据一致性
+	// 启动新协程
+	go func () {
+		panic(123)
+	}()
+	// 等待一下，不然协程可能来不及执行
+	time.Sleep(1 * time.Second)
+	fmt.Println("这条消息打印不出来")
+}
+```
 
-### 怎么实现一个延时队列？
+输出：
+```other
+panic: 123
 
-### redis做缓存时，如何保证与mysql数据一致性
+goroutine 6 [running]:
+main.main.func2()
+...
+Process finished with exit code 2
+```
 
-### redis中 hash的数据结构是
+* 可以看到`recover`没有成功执行，整个进程都退出了
+* 所以开了新协程而且忘记了在协程中捕获`panic`的话，服务的进程就会因为某个未捕获的`panic`而退出。
+* 解决方法，使用结构体维护两个通道来处理`done`和`panic`事件,外部使用`select`来维护处理抛出`panic`，这样外部就可以`recover`了
 
-### redis主从同步，中间挂掉时如何处理
+引用: [Go协程这样用才安全](https://zhuanlan.zhihu.com/p/146472834)
 
 ### 最后
 
