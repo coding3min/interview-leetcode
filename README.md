@@ -27,11 +27,13 @@
 
 刷题平台：[LeetCode中国](https://leetcode-cn.com/problemset/all/)
 
-|目录 |说明|
-|:-----|:-----|
-|[LeetCode-hot100](./LeetCode/hot100/README.md)|LeetCode 100道热门题目，建议最先刷完|
-|剑指Offer|建议刷完hot100扣刷|
-|[全部题目](./LeetCode/all)|所有题目汇总|
+* [算法面试注意](算法面试注意.md)
+* [数据结构](interview/数据结构.md)
+* [LeetCode-hot100-easy](LeetCode/hot100/easy.md)
+* [LeetCode-hot100-medium](LeetCode/hot100/medium.md)
+* [LeetCode-hot100-difficult](LeetCode/hot100/difficult.md)
+* [其他高频算法](LeetCode/other.md)
+* [华为机试](LeetCode/华为机试.md)
 
 ### 面试高频问题大全
 

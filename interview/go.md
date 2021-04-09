@@ -73,6 +73,16 @@ go中的chan 是用锁实现的。所以肯定不会比锁块。
 
 ### 如何实现秒杀系统？
 
+### 如何保证rabbitmq集群数据一致性
+
+### 怎么实现一个延时队列？
+
+### redis做缓存时，如何保证与mysql数据一致性
+
+### redis中 hash的数据结构是
+
+### redis主从同步，中间挂掉时如何处理
+
 ### 最后
 
 如果文中有误，欢迎提pr或者issue，**一旦合并或采纳作为贡献奖励可以联系我直接无门槛**加入[技术交流群](https://mp.weixin.qq.com/s/ErQFjJbIsMVGjIRWbQCD1Q)
