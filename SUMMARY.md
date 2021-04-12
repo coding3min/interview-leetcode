@@ -15,6 +15,7 @@
 * [Java](interview/Java.md)
 * [Redis](interview/redis.md)
 * [Mysql](interview/mysql.md)
+* [消息队列](interview/消息队列.md)
 * [网络](interview/网络.md)
 * [Docker](interview/docker.md)
 * [k8s](interview/k8s.md)
