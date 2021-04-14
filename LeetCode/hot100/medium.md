@@ -132,6 +132,88 @@ func dfs(左括号个数，右括号个数，当前字符串){
 
 代码：[golang](../all/22.括号生成.go)
 
+### 103.二叉树的锯齿形层序遍历
+
+题目：[先从左往右，再从右往左进行下一层遍历，以此类推，层与层之间交替进](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/description/)
+
+题解：不改变原树结构，层遍历，维护正反bool条件，头插尾插，最终返回二维数组
+
+代码：[golang](../all/103.二叉树的锯齿形层序遍历.go)
+
+### 39.组合总合
+
+题目：[找出数组里所有和等于target的总合](https://leetcode-cn.com/problems/combination-sum/description/)
+
+题解：回溯，边界是sum大于target剪枝，等于就拿到一个结果
+
+注意：append一维数组的时候要拷贝下
+
+拷贝函数参考
+``` go
+var tmp []int
+tmp = append(tmp,curr...)
+res = append(res,tmp)
+```
+
+代码：[golang](../all/39.组合总和.go)
+
+### 142. 环形链表 II
+
+题目：[找到交点坐标的下标，无环时返回null](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
+
+题解：
+* 这不仅仅是返回是否相交，还要找到交点的下标；我们知道可以用双指针相遇时说明相交
+* 找到交点时，快指针正好比慢指针多一圈
+
+![](../../res/2021-04-14-17-29-43.png)
+
+设链表共有 a+b+c 个节点，链表头部到链表入口有 a 个节点（不计链表入口节点），相遇时快指针走了a+b+c+b次，慢指针走了a+b次，发件人指针是慢指针的两倍速度,可得
+
+```
+a+b+c+b = 2(a+b)
+c=a
+```
+
+所以相遇时再加一个头指针一起跑，慢指针继续跑相遇点就是环的起始位置
+
+代码不写了，比较简单
+
+### 300.最长递增子序列
+
+题目：[求最长递增子序列的长度，子序列是不连续的](https://leetcode-cn.com/problems/longest-increasing-subsequence/description/)
+
+题解：求最值，不用保存子序列，我们记录数组里每个数作为终点的序列最长长度就好了
+
+* 对每个数都遍历之前的数，只要比当前数小，说明他可以作为终点
+* 因为已经记录了之前数作为终点的序列长度，让序列长度+1就可以
+* 再做下对比，公式如下
+
+```go
+max(dp[i],dp[j]+1)
+```
+
+得到所有序列作为终点的最长子序列长度数组以后，遍历下取最值就好了
+
+代码：[golang](../all/300.最长递增子序列.go)
+
+### 1143.最长公共子序列
+
+题目：[求两个数组的最长公共子序列长度](https://leetcode-cn.com/problems/longest-common-subsequence/description/)
+
+题解：
+* 用二维数组dp记录最长公共子序列长度，`dp[i][j]` 为当前位置最长公共子序列长度，状态转移方程
+```go
+// 其中因为当前字符相等，所以长度各减1的dp[i-1][j-1]表示没有当前字符时字符串的最长公共子序列长度
+// 也就是加入text1长度为i，text2长度为j，i j 就是当前长度的最长公共子序列,i-1 j 代表长度为i-1的字符串与j的字符串公共子序列长度
+if text1[i] == text2[j] then dp[i][j] = dp[i-1][j-1] + 1 
+// 长度不一样时对比各自长度-1，作为当前长度最长公共子序列
+if text1[i] != text2[j] then dp[i][j] = max(dp[i-1][j],dp[i][j-1])
+```
+
+注意：i-1 和 j-1 会越界，申明时让dp行列`len+1`
+
+代码：[golang](../all/1143.最长公共子序列.go)
+
 ### 
 
 题目：[]()
@@ -140,17 +222,7 @@ func dfs(左括号个数，右括号个数，当前字符串){
 
 注意：
 
-代码：[golang](../)
-
-### 
-
-题目：[]()
-
-题解：
-
-注意：
-
-代码：[golang](..)
+代码：[golang](../all/)
 
 ### 最后
 

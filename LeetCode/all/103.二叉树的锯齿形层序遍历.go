@@ -69,6 +69,7 @@ func zigzagLevelOrder(root *TreeNode) [][]int {
 			if node.Left != nil {queue = append(queue,node.Left)}
 			if node.Right != nil {queue = append(queue,node.Right)}
 		}
+		// 一次性出队或者一个一个出队都可以
 		queue = queue[n:]
 		ans = append(ans, levelQueue)
 		isDesc = !isDesc
