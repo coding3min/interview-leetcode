@@ -74,7 +74,6 @@ Redis 事务可以一次执行多个命令，单个 Redis 命令的执行是原�
 
 引用：[Redis事务](https://www.runoob.com/redis/redis-transactions.html)
 
-
 ### Redis 与 Memcached 对比
 
 * 两者都是非关系型内存键值数据库
@@ -131,8 +130,8 @@ Redis 事务可以一次执行多个命令，单个 Redis 命令的执行是原�
   + 使用多级缓存机制，比如同时使用redsi和memcache缓存，请求->redis->memcache->db；
   + redis高可用
 * 缓存击穿：某个 key 非常热点，访问非常频繁，处于集中式高并发访问的情况，当这个 key 在失效的瞬间，大量的请求就击穿了缓存，直接请求数据库
-  * 可以将热点数据设置为永不过期
-  * 基于 redis or zookeeper 实现互斥锁，等待第一个请求构建完缓存之后，再释放锁，进而其它请求才能通过该 key 访问数据。
+  + 可以将热点数据设置为永不过期
+  + 基于 redis or zookeeper 实现互斥锁，等待第一个请求构建完缓存之后，再释放锁，进而其它请求才能通过该 key 访问数据。
 
 引用：[Redis雪崩、穿透和击穿](https://juejin.cn/post/6844903886113751053)
 
@@ -148,7 +147,7 @@ Redis 事务可以一次执行多个命令，单个 Redis 命令的执行是原�
 
 ### redis主从同步，中途重连时如何识别同步点
 
-从`redis 2.8`开始支持断点续传，`master`会存储一个`backlog`，`master`和`slave`都会保存一个`replica offset`还有一个`master id`, `offset`就是保存在`backlog`中的, 如果`master`和`slave`网络连接断掉了, `slave`会让`master`从上次的`replica offset`开始继续复制但是如果没有找到对应的`offset`, 那么就会执行一次`resynchronization`(重新同步).
+从 `redis 2.8` 开始支持断点续传， `master` 会存储一个 `backlog` ， `master` 和 `slave` 都会保存一个 `replica offset` 还有一个 `master id` , `offset` 就是保存在 `backlog` 中的, 如果 `master` 和 `slave` 网络连接断掉了, `slave` 会让 `master` 从上次的 `replica offset` 开始继续复制但是如果没有找到对应的 `offset` , 那么就会执行一次 `resynchronization` (重新同步).
 
 引用：[redis主从复制原理, 断点续传, 无磁盘化复制, 过期key的处理](https://segmentfault.com/a/1190000021683032)
 
@@ -229,4 +228,3 @@ jing
 我是小熊，关注我，知道更多不知道的技术
 
 ![](../res/2021-03-17-19-57-33.png)
-
