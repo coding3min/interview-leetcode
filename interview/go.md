@@ -50,7 +50,7 @@
 
 G指goroutine M thread(machine)、P(Processor处理器)
 
-![](../res/2021-04-13-17-51-47.png)
+![](../res/2021-04-15-19-23-20.png)
 
 * 在 Go 中，线程是运行 goroutine 的实体，调度器的功能是把可运行的 goroutine 分配到工作线程上。
 * 全局队列（Global Queue）：存放等待运行的 G。
