@@ -12,9 +12,7 @@
 点击下列题目标题可以跳转到LeetCode中文官网直接阅读题目，提交代码。
 点击下列代码链接，可以直接跳转到我的GitHub代码页面。每道题一般精选一种解法，我的GitHub中可能收录多种解法代码，请自行查看。
 
-### 题解
-
-#### 3.无重复字符的最长子串
+### 3.无重复字符的最长子串
 
 题目：[在字符串中找一个子串，要求连续无重复字符且最长，只需要返回最大长度](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/description/)
 
@@ -68,7 +66,7 @@
 
 代码：[golang](../all/215.数组中的第k个最大元素.go)
 
-#### 15.三数之和
+### 15.三数之和
 
 题目：[数组里有没有三个数加起来为0，找出所有可能的情况](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/description/)
 
@@ -214,15 +212,45 @@ if text1[i] != text2[j] then dp[i][j] = max(dp[i-1][j],dp[i][j-1])
 
 代码：[golang](../all/1143.最长公共子序列.go)
 
-### 
+### 59.螺旋矩阵-ii
 
-题目：[]()
+题目：[给一个数字n，输出n*n的正方形螺旋矩阵](https://leetcode-cn.com/problems/spiral-matrix-ii/description/)
 
-题解：
+题解：生成一个 n×n 空矩阵 mat，随后模拟整个向内环绕的填入过程：
+* 定义当前左右上下边界 l,r,t,b，初始值 num = 1，迭代终止值 tar = n * n；
+* 当 num <= tar 时，始终按照 从左到右 从上到下 从右到左 从下到上 填入顺序循环，每次填入后： 
+    * 执行 num += 1：得到下一个需要填入的数字；
+    * 更新边界：例如从左到右填完后，上边界 t += 1，相当于上边界向内缩 1。
+* 使用num <= tar而不是l < r || t < b作为迭代条件，是为了解决当n为奇数时，矩阵中心数字无法在迭代过程中被填充的问题。
 
-注意：
+最终返回 mat 即可。
 
-代码：[golang](../all/)
+[题解来源](https://leetcode-cn.com/problems/spiral-matrix-ii/solution/spiral-matrix-ii-mo-ni-fa-she-ding-bian-jie-qing-x/)
+
+代码：[golang](../all/59.螺旋矩阵-ii.go)
+
+### 搜索二维矩阵
+
+题目：[递增的二维矩阵，搜索值是否在内部](https://leetcode-cn.com/problems/search-a-2d-matrix/description/)
+
+题解：方法1，简单搜索
+
+* 以二维数组左下角为原点，建立直角坐标轴。
+* 若当前数字大于了查找数，查找往上移一位。
+* 若当前数字小于了查找数，查找往右移一位。
+
+[题解来源](https://leetcode-cn.com/problems/search-a-2d-matrix/solution/zuo-biao-zhou-fa-er-wei-shu-zu-zhong-de-nxfc8/)
+
+方法2，二分搜索（独创）
+
+既然列递增，且行递增，下一行所有数字都比上一行大，可以把二维数组拼接起来，视为递增的一纬度数组来处理
+
+* 取行列长度n1 n2，得到全局数字个数n1*n2
+* 使用二分法，取数字时，mid/n2为行，mid%n2为列即可
+
+[我的题解](https://leetcode-cn.com/problems/search-a-2d-matrix/solution/tui-hua-fa-yi-ci-er-fen-zhao-dao-shu-zi-k36is/)
+
+代码：[golang](../all/74.搜索二维矩阵.go)
 
 ### 最后
 
