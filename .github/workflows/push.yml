@@ -1,0 +1,41 @@
+name: Github-Pages-push
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    defaults:
+      run:
+        working-directory: ./.tmp
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          submodules: true
+
+      - name: create blog
+        run: |
+          cp -R ../* .tmp/content
+          cp .tmp/content/README.md .tmp/content/_index.md
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.84.0'
+          extended: true
+
+      - name: Build
+        run: hugo --gc --minify --cleanDestinationDir
+      
+      - name: Pushes to another repository
+        uses: nkoppel/push-files-to-another-repository@master
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-files: '.tmp/public/*'
+          destination-github-username: 'coding3min'
+          destination-repository-name: 'coding3min.github.io'
+          user-email: 'pzqu@qq.com'
