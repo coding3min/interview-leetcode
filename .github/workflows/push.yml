@@ -18,8 +18,8 @@ jobs:
 
       - name: create blog
         run: |
-          cp -R ../* .tmp/content
-          cp .tmp/content/README.md .tmp/content/_index.md
+          cp -R ../* content/
+          cp content/README.md content/_index.md
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2

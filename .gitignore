@@ -4,5 +4,3 @@
 *.pyo
 .vscode
 _book
-.tmp/content/*
-.tmp/content/public
