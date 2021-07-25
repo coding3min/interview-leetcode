@@ -1,0 +1,3 @@
+script:
+  - sh .travis-push.sh
+

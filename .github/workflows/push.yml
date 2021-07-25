@@ -3,7 +3,7 @@ name: Github-Pages-push
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
@@ -20,7 +20,8 @@ jobs:
         run: |
           cp -R ../* content/
           cp content/README.md content/_index.md
-
+          find content/ -name "*.md" | xargs -n 1 sed -i 's/.md//g'
+          
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:

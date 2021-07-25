@@ -11,7 +11,7 @@
 ![Travis](https://img.shields.io/badge/language-Golang-orange.svg) ![last commit](https://img.shields.io/github/last-commit/coding3min/interview-leetcode.svg)
 
 * 如果这个项目能为您带来帮助，我将感到非常荣幸！😁 
-* 如果您也对这个项目感兴趣，请点击一下  **🌟Star** 以示鼓励， 项目会 **持续更新**，谢谢你的支持。
+* 如果您也对这个项目感兴趣，请[点此跳转项目**🌟Star**](https://github.com/coding3min/interview-leetcode) 以示鼓励， 项目会 **持续更新**，谢谢你的支持。
 
 ### 成员结构
 

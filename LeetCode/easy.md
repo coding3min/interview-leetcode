@@ -20,7 +20,7 @@
 
 题解：遍历数组，用目标值减去当前值，判断HashMap是否有值存在，如果有则创建新数组返回两者，如果没有循环遍历完返回空数组
 
-时间复杂度：O\(1\) 代码：[golang](https://github.com/coding3min/interview-leetcode/tree/f218b102b41d5ce6b95e9b305fdc326205b4e2f9/LeetCode/all/1.两数之和.go)
+时间复杂度：O\(1\) 代码：[golang](https://github.com/coding3min/interview-leetcode/tree/master/LeetCode/all/1.两数之和.go)
 
 ### 20.有效的括号\(高频\)
 
@@ -30,7 +30,7 @@
 
 注意：go语言可以用byte代表单个字符
 
-代码：[golang](https://github.com/coding3min/interview-leetcode/tree/f218b102b41d5ce6b95e9b305fdc326205b4e2f9/LeetCode/all/20.有效的括号.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/master/LeetCode/all/20.有效的括号.go)
 
 ### 21.合并两个有序链表\(高频\)
 
@@ -58,7 +58,7 @@ if l1!=nil{
 }
 ```
 
-代码：[golang](https://github.com/coding3min/interview-leetcode/tree/f218b102b41d5ce6b95e9b305fdc326205b4e2f9/LeetCode/all/21.合并两个有序链表.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/master/LeetCode/all/21.合并两个有序链表.go)
 
 ### 53.最大子序和\(高频\)
 
@@ -78,7 +78,7 @@ last = max(nums[i],nums[i]+last)
 resMax = max(resMax,last)
 ```
 
-代码：[golang](https://github.com/coding3min/interview-leetcode/tree/f218b102b41d5ce6b95e9b305fdc326205b4e2f9/LeetCode/all/53.最大子序和.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/master/LeetCode/all/53.最大子序和.go)
 
 ### 70.爬楼梯
 
@@ -86,7 +86,7 @@ resMax = max(resMax,last)
 
 题解：斐波那契数列，返回结果是前两个值的和，只需要保存前两个值和当前结果，递推赋值即可
 
-代码：[golang](https://github.com/coding3min/interview-leetcode/tree/f218b102b41d5ce6b95e9b305fdc326205b4e2f9/LeetCode/all/70.爬楼梯.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/master/LeetCode/all/70.爬楼梯.go)
 
 ### 101.对称二叉树
 
@@ -112,7 +112,7 @@ if p==nil || q==nil{
 }
 ```
 
-代码：[golang](https://github.com/coding3min/interview-leetcode/tree/f218b102b41d5ce6b95e9b305fdc326205b4e2f9/LeetCode/all/101.对称二叉树.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/master/LeetCode/all/101.对称二叉树.go)
 
 ### 104.二叉树的最大深度
 
@@ -120,7 +120,7 @@ if p==nil || q==nil{
 
 题解：递归，前序遍历，返回值为左右节点最大深度+1，退出条件为null节点返回0，左右子树都为空返回1
 
-代码：[golang](https://github.com/coding3min/interview-leetcode/tree/f218b102b41d5ce6b95e9b305fdc326205b4e2f9/LeetCode/all/104.二叉树的最大深度.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/master/LeetCode/all/104.二叉树的最大深度.go)
 
 ### 121.买卖股票的最佳时机\(高频\)
 
@@ -136,7 +136,7 @@ if v<minNum{
 }
 ```
 
-代码：[golang](https://github.com/coding3min/interview-leetcode/tree/f218b102b41d5ce6b95e9b305fdc326205b4e2f9/LeetCode/all/121.买卖股票的最佳时机.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/master/LeetCode/all/121.买卖股票的最佳时机.go)
 
 ### 136.只出现一次的数字
 
@@ -148,7 +148,7 @@ if v<minNum{
 * 方法二、每个值都异或，最终得到的就是答案
 * 异或的性质：`a^a=0, a^0=a`
 
-代码：[golang](https://github.com/coding3min/interview-leetcode/tree/f218b102b41d5ce6b95e9b305fdc326205b4e2f9/LeetCode/all/136.只出现一次的数字.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/master/LeetCode/all/136.只出现一次的数字.go)
 
 ### 141.环形链表\(高频\)
 
@@ -160,7 +160,7 @@ if v<minNum{
 p.Next != nil && q.Next != nil && q.Next.Next != nil
 ```
 
-代码：[golang](https://github.com/coding3min/interview-leetcode/tree/f218b102b41d5ce6b95e9b305fdc326205b4e2f9/LeetCode/all/141.环形链表.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/master/LeetCode/all/141.环形链表.go)
 
 ### 155.最小栈\(中频\)
 
@@ -175,7 +175,7 @@ p.Next != nil && q.Next != nil && q.Next.Next != nil
 
 这样出栈同同步出栈，始终最小值就是栈2的栈顶，使用了一个当前最优解的思路
 
-代码：[golang](https://github.com/coding3min/interview-leetcode/tree/f218b102b41d5ce6b95e9b305fdc326205b4e2f9/LeetCode/all/155.最小栈.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/master/LeetCode/all/155.最小栈.go)
 
 ### 160.相交链表\(高频\)
 
@@ -199,7 +199,7 @@ pA:1->2->3->4->5->6->null->9->5->6->null
 pB:9->5->6->null->1->2->3->4->5->6->null
 ```
 
-代码：[golang](https://github.com/coding3min/interview-leetcode/tree/f218b102b41d5ce6b95e9b305fdc326205b4e2f9/LeetCode/all/160.相交链表.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/master/LeetCode/all/160.相交链表.go)
 
 ### 169.多数元素
 
@@ -227,7 +227,7 @@ func majorityElement(nums []int) int {
 }
 ```
 
-代码：[golang](https://github.com/coding3min/interview-leetcode/tree/f218b102b41d5ce6b95e9b305fdc326205b4e2f9/LeetCode/all/169.多数元素.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/master/LeetCode/all/169.多数元素.go)
 
 ### 206.反转链表\(高频\)
 
@@ -264,7 +264,7 @@ return newHead
 * 每次保存下一个节点，让当前节点指向上一个节点
 * 然后向下走一位,`prev=curr; curr=next`,`curr`为空时停止，`prev`就是新的头节点
 
-代码：[golang](https://github.com/coding3min/interview-leetcode/tree/f218b102b41d5ce6b95e9b305fdc326205b4e2f9/LeetCode/all/206.反转链表.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/master/LeetCode/all/206.反转链表.go)
 
 ### 226.翻转二叉树
 
@@ -281,7 +281,7 @@ return newHead
 
 方法2 递归:其实子节点还是属于父节点，只要翻转左右节点位置就行了
 
-自身递归，“交换”左右子树时记得备份。 代码：[golang](https://github.com/coding3min/interview-leetcode/tree/f218b102b41d5ce6b95e9b305fdc326205b4e2f9/LeetCode/all/226.翻转二叉树.go)
+自身递归，“交换”左右子树时记得备份。 代码：[golang](https://github.com/coding3min/interview-leetcode/tree/master/LeetCode/all/226.翻转二叉树.go)
 
 ### 234.回文链表
 
@@ -292,7 +292,7 @@ return newHead
 * 把剩下的一半变成逆序，再进行比较。注意奇偶情况讨论。递归非递归都行，想起来哪个用哪个，判断完后恢复链表
 * 如果要快就边跑边让慢指针翻转链表，结束后也不用恢复
 
-  代码：[golang](https://github.com/coding3min/interview-leetcode/tree/f218b102b41d5ce6b95e9b305fdc326205b4e2f9/LeetCode/all/234.回文链表.go)
+  代码：[golang](https://github.com/coding3min/interview-leetcode/tree/master/LeetCode/all/234.回文链表.go)
 
 ### 283.移动零
 
@@ -300,7 +300,7 @@ return newHead
 
 题解：两个下标，使用类似于选择插入排序的方法，不断扩充非零列，剩余的元素用0填充
 
-代码：[golang](https://github.com/coding3min/interview-leetcode/tree/f218b102b41d5ce6b95e9b305fdc326205b4e2f9/LeetCode/all/283.移动零.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/master/LeetCode/all/283.移动零.go)
 
 ### 448.找到所有数组中消失的数字
 
@@ -308,7 +308,7 @@ return newHead
 
 题解： 法1、直接用hash表，比较简单，不过建议还是用法2可以体现水平 法2、用占位方法，遍历，出现的abs\(数字\)-1作为下标的数字改为负，如果已经是负的就不用改了，最后再遍历一次数组把存储数字为正位置的\(下标+1\)存储到结果集里
 
-代码：[golang](https://github.com/coding3min/interview-leetcode/tree/f218b102b41d5ce6b95e9b305fdc326205b4e2f9/LeetCode/all/448.找到所有数组中消失的数字.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/master/LeetCode/all/448.找到所有数组中消失的数字.go)
 
 ### 461.汉明距离
 
@@ -316,7 +316,7 @@ return newHead
 
 题解：先亦或，然后`%2=1`时统计，`>>1`代表`/2`去掉一位
 
-代码：[golang](https://github.com/coding3min/interview-leetcode/tree/f218b102b41d5ce6b95e9b305fdc326205b4e2f9/LeetCode/all/461.汉明距离.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/master/LeetCode/all/461.汉明距离.go)
 
 ### 543.二叉树的直径
 
@@ -328,7 +328,7 @@ return newHead
 * 维护一个最大值，递归返回后判断左右子树贡献的深度和，与最大值哪个大，更新最大值，这样可以保证直径是当前最大 `max(x+y,maxRes)`
 * 返回当前子树最大深度`return max(x,y)+1`
 
-代码：[golang](https://github.com/coding3min/interview-leetcode/tree/f218b102b41d5ce6b95e9b305fdc326205b4e2f9/LeetCode/all/543.二叉树的直径.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/master/LeetCode/all/543.二叉树的直径.go)
 
 ### 617.合并二叉树
 
@@ -341,7 +341,7 @@ return newHead
 * 处理递归函数，分别传入两棵树的左子树或右子树，赋值给当前节点左右子树
 * 跟437 路径总和III的思想是一样的。
 
-代码：[golang](https://github.com/coding3min/interview-leetcode/tree/f218b102b41d5ce6b95e9b305fdc326205b4e2f9/LeetCode/all/617.合并二叉树.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/master/LeetCode/all/617.合并二叉树.go)
 
 ## 最后
 
@@ -349,5 +349,5 @@ return newHead
 
 我是小熊，关注我，知道更多不知道的技术
 
-![](https://github.com/coding3min/interview-leetcode/tree/f218b102b41d5ce6b95e9b305fdc326205b4e2f9/LeetCode/hot100/res/2021-03-17-19-57-33.png)
+![](https://github.com/coding3min/interview-leetcode/tree/master/LeetCode/hot100/res/2021-03-17-19-57-33.png)
 
