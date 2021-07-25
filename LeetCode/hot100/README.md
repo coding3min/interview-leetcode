@@ -1,6 +1,6 @@
 ### 介绍
 
-题目列表请戳 [LeetCode-Hot100列表](https://leetcode-cn.com/problemset/leetcode-hot-100/
+题目列表请戳 [LeetCode-Hot100列表](https://leetcode-cn.com/problem-list/2cktkvj/)
 
 算法 LeetCode Hot 100 思路与代码，请点击相应目录查看
 
