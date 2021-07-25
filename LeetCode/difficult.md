@@ -6,7 +6,7 @@
 
 按频率排序，排序依据参考 [字节跳动后端高频面试题目](https://github.com/afatcoder/LeetcodeTop/blob/master/bytedance/backend.md)。
 
-全部源码可见我的GitHub [interview-leetcode](https://github.com/minibear2333/interview-leetcode/tree/master/LeetCode/all)
+全部源码可见我的GitHub [interview-leetcode](https://github.com/coding3min/interview-leetcode/tree/master/LeetCode/all)
 
 注：
 
@@ -27,7 +27,7 @@
 * 上面1、2、3步骤的动作`else` 反过来，`r--; if height[r]<rMax then res+= rMax-height[r] else rMax = height[r]`
 * 循环条件`l<r`,函数至少要3个值才有可能形成低洼，所以边界是`len<3 return 0` 
 
-代码：[golang](https://github.com/minibear2333/interview-leetcode/tree/9d726fc1d9f1346a11ec8c461d4cecc4ad3c91ad/LeetCode/all/42.接雨水.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/9d726fc1d9f1346a11ec8c461d4cecc4ad3c91ad/LeetCode/all/42.接雨水.go)
 
 题目：
 
@@ -35,7 +35,7 @@
 
 注意：
 
-代码：[golang](https://github.com/minibear2333/interview-leetcode/tree/9d726fc1d9f1346a11ec8c461d4cecc4ad3c91ad/LeetCode/README.md)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/9d726fc1d9f1346a11ec8c461d4cecc4ad3c91ad/LeetCode/README.md)
 
 ## 最后
 
@@ -43,5 +43,5 @@
 
 我是小熊，关注我，知道更多不知道的技术
 
-![](https://github.com/minibear2333/interview-leetcode/tree/9d726fc1d9f1346a11ec8c461d4cecc4ad3c91ad/LeetCode/hot100/res/2021-03-17-19-57-33.png)
+![](https://github.com/coding3min/interview-leetcode/tree/9d726fc1d9f1346a11ec8c461d4cecc4ad3c91ad/LeetCode/hot100/res/2021-03-17-19-57-33.png)
 

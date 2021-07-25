@@ -4,3 +4,4 @@
 *.pyo
 .vscode
 _book
+.tmp/content/*

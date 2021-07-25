@@ -6,7 +6,7 @@
 
 按频率排序，排序依据参考 [字节跳动后端高频面试题目](https://github.com/afatcoder/LeetcodeTop/blob/master/bytedance/backend.md)。
 
-全部源码可见我的GitHub [interview-leetcode](https://github.com/minibear2333/interview-leetcode/tree/master/LeetCode/all)
+全部源码可见我的GitHub [interview-leetcode](https://github.com/coding3min/interview-leetcode/tree/master/LeetCode/all)
 
 注：
 
@@ -24,7 +24,7 @@
 * 只要当前字符出现在map里，同时map里的字符就是子串里的字符时（存储的字符下标大于等于起始位置下标）说明重复，更新子串起始位置为map中记录的重复点+1
 * else \(没有出现在子串里\)，子串长度++，判断更新最大长度\(注意更新时+1\)
 
-代码：[golang](https://github.com/minibear2333/interview-leetcode/tree/a5bdcb9c83a659846f49bc48e9345212b7f95784/LeetCode/all/3.无重复字符的最长子串.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/a5bdcb9c83a659846f49bc48e9345212b7f95784/LeetCode/all/3.无重复字符的最长子串.go)
 
 ## 215.数组中的第k个最大元素
 
@@ -63,7 +63,7 @@
 
 引用：[优劣比较](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/tu-jie-top-k-wen-ti-de-liang-chong-jie-fa-you-lie-/)
 
-代码：[golang](https://github.com/minibear2333/interview-leetcode/tree/a5bdcb9c83a659846f49bc48e9345212b7f95784/LeetCode/all/215.数组中的第k个最大元素.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/a5bdcb9c83a659846f49bc48e9345212b7f95784/LeetCode/all/215.数组中的第k个最大元素.go)
 
 ## 15.三数之和
 
@@ -81,7 +81,7 @@
 * 因为不能有重复的结果，所以前后两次遍历取的元素如果相等，要采取跳过的操作
 * 在第三步中，对当前元素的后面的所有元素进行处理的原因是，前面的元素已经找到了所有符合条件的可能，不需要再找
 
-代码：[golang](https://github.com/minibear2333/interview-leetcode/tree/a5bdcb9c83a659846f49bc48e9345212b7f95784/LeetCode/all/15.三数之和.go) 引用：[【LeetCode】15\#三数之和](https://zhuanlan.zhihu.com/p/53519899)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/a5bdcb9c83a659846f49bc48e9345212b7f95784/LeetCode/all/15.三数之和.go) 引用：[【LeetCode】15\#三数之和](https://zhuanlan.zhihu.com/p/53519899)
 
 ## 22.括号生成
 
@@ -130,7 +130,7 @@ func dfs(左括号个数，右括号个数，当前字符串){
 
 注意：边界n==0不需要查找
 
-代码：[golang](https://github.com/minibear2333/interview-leetcode/tree/a5bdcb9c83a659846f49bc48e9345212b7f95784/LeetCode/all/22.括号生成.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/a5bdcb9c83a659846f49bc48e9345212b7f95784/LeetCode/all/22.括号生成.go)
 
 ## 103.二叉树的锯齿形层序遍历
 
@@ -138,7 +138,7 @@ func dfs(左括号个数，右括号个数，当前字符串){
 
 题解：不改变原树结构，层遍历，维护正反bool条件，头插尾插，最终返回二维数组
 
-代码：[golang](https://github.com/minibear2333/interview-leetcode/tree/a5bdcb9c83a659846f49bc48e9345212b7f95784/LeetCode/all/103.二叉树的锯齿形层序遍历.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/a5bdcb9c83a659846f49bc48e9345212b7f95784/LeetCode/all/103.二叉树的锯齿形层序遍历.go)
 
 ## 39.组合总合
 
@@ -156,7 +156,7 @@ tmp = append(tmp,curr...)
 res = append(res,tmp)
 ```
 
-代码：[golang](https://github.com/minibear2333/interview-leetcode/tree/a5bdcb9c83a659846f49bc48e9345212b7f95784/LeetCode/all/39.组合总和.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/a5bdcb9c83a659846f49bc48e9345212b7f95784/LeetCode/all/39.组合总和.go)
 
 ## 142. 环形链表 II
 
@@ -196,7 +196,7 @@ max(dp[i],dp[j]+1)
 
 得到所有序列作为终点的最长子序列长度数组以后，遍历下取最值就好了
 
-代码：[golang](https://github.com/minibear2333/interview-leetcode/tree/a5bdcb9c83a659846f49bc48e9345212b7f95784/LeetCode/all/300.最长递增子序列.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/a5bdcb9c83a659846f49bc48e9345212b7f95784/LeetCode/all/300.最长递增子序列.go)
 
 ## 1143.最长公共子序列
 
@@ -216,7 +216,7 @@ max(dp[i],dp[j]+1)
 
 注意：i-1 和 j-1 会越界，申明时让dp行列`len+1`
 
-代码：[golang](https://github.com/minibear2333/interview-leetcode/tree/a5bdcb9c83a659846f49bc48e9345212b7f95784/LeetCode/all/1143.最长公共子序列.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/a5bdcb9c83a659846f49bc48e9345212b7f95784/LeetCode/all/1143.最长公共子序列.go)
 
 ## 59.螺旋矩阵-ii
 
@@ -234,7 +234,7 @@ max(dp[i],dp[j]+1)
 
 [题解来源](https://leetcode-cn.com/problems/spiral-matrix-ii/solution/spiral-matrix-ii-mo-ni-fa-she-ding-bian-jie-qing-x/)
 
-代码：[golang](https://github.com/minibear2333/interview-leetcode/tree/a5bdcb9c83a659846f49bc48e9345212b7f95784/LeetCode/all/59.螺旋矩阵-ii.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/a5bdcb9c83a659846f49bc48e9345212b7f95784/LeetCode/all/59.螺旋矩阵-ii.go)
 
 ## 搜索二维矩阵
 
@@ -257,7 +257,7 @@ max(dp[i],dp[j]+1)
 
 [我的题解](https://leetcode-cn.com/problems/search-a-2d-matrix/solution/tui-hua-fa-yi-ci-er-fen-zhao-dao-shu-zi-k36is/)
 
-代码：[golang](https://github.com/minibear2333/interview-leetcode/tree/a5bdcb9c83a659846f49bc48e9345212b7f95784/LeetCode/all/74.搜索二维矩阵.go)
+代码：[golang](https://github.com/coding3min/interview-leetcode/tree/a5bdcb9c83a659846f49bc48e9345212b7f95784/LeetCode/all/74.搜索二维矩阵.go)
 
 ## 最后
 
@@ -265,5 +265,5 @@ max(dp[i],dp[j]+1)
 
 我是小熊，关注我，知道更多不知道的技术
 
-![](https://github.com/minibear2333/interview-leetcode/tree/a5bdcb9c83a659846f49bc48e9345212b7f95784/LeetCode/hot100/res/2021-03-17-19-57-33.png)
+![](https://github.com/coding3min/interview-leetcode/tree/a5bdcb9c83a659846f49bc48e9345212b7f95784/LeetCode/hot100/res/2021-03-17-19-57-33.png)
 

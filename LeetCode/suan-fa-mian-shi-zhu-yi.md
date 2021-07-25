@@ -40,7 +40,7 @@ math.MinInt32
 
 牛客网比较坑，一切输入输出都要自己实现
 
-还要劳记链表创建代码，[完整代码](https://github.com/minibear2333/interview-leetcode/tree/5cb2e5224e55a017aa569f71ee31714371f1a8cd/LeetCode/all/0.创建链表.go)
+还要劳记链表创建代码，[完整代码](https://github.com/coding3min/interview-leetcode/tree/5cb2e5224e55a017aa569f71ee31714371f1a8cd/LeetCode/all/0.创建链表.go)
 
 ```go
 package main
@@ -70,7 +70,7 @@ func createNode(a []int) *LinkNode{
 }
 ```
 
-同时要牢记二叉树的创建代码，[完整代码](https://github.com/minibear2333/interview-leetcode/tree/5cb2e5224e55a017aa569f71ee31714371f1a8cd/LeetCode/all/0.创建二叉树.go)
+同时要牢记二叉树的创建代码，[完整代码](https://github.com/coding3min/interview-leetcode/tree/5cb2e5224e55a017aa569f71ee31714371f1a8cd/LeetCode/all/0.创建二叉树.go)
 
 ```go
 type BTnode struct {
@@ -107,15 +107,15 @@ func createTree(a []int) *BTnode {
 
 常用排序算法在某些公司是会问到的，思路和时间复杂度如果都不知道，对结果的冲击是很大的
 
-| 排序算法 | 平均时间复杂度 | 最坏时间复杂度 | 最好时间复杂度 | 空间复杂度 | 稳定性 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 冒泡排序 | O\(n²\) | O\(n²\) | O\(n\) | O\(1\) | 稳定 |
-| 直接选择排序 | O\(n²\) | O\(n²\) | O\(n\) | O\(1\) | 不稳定 |
-| 直接插入排序 | O\(n²\) | O\(n²\) | O\(n\) | O\(1\) | 稳定 |
-| 快速排序 | O\(nlogn\) | O\(n²\) | O\(nlogn\) | O\(nlogn\) | 不稳定 |
-| 堆排序 | O\(nlogn\) | O\(nlogn\) | O\(nlogn\) | O\(1\) | 不稳定 |
-| 希尔排序 | O\(nlogn\) | O\(ns\) | O\(n\) | O\(1\) | 不稳定 |
-| 归并排序 | O\(nlogn\) | O\(nlogn\) | O\(nlogn\) | O\(n\) | 稳定 |
-| 计数排序 | O\(n+k\) | O\(n+k\) | O\(n+k\) | O\(n+k\) | 稳定 |
-| 基数排序 | O\(N\*M\) | O\(N\*M\) | O\(N\*M\) | O\(M\) | 稳定 |
+| 排序算法     | 平均时间复杂度 | 最坏时间复杂度 | 最好时间复杂度 | 空间复杂度 | 稳定性 |
+| :----------- | :------------- | :------------- | :------------- | :--------- | :----- |
+| 冒泡排序     | O\(n²\)        | O\(n²\)        | O\(n\)         | O\(1\)     | 稳定   |
+| 直接选择排序 | O\(n²\)        | O\(n²\)        | O\(n\)         | O\(1\)     | 不稳定 |
+| 直接插入排序 | O\(n²\)        | O\(n²\)        | O\(n\)         | O\(1\)     | 稳定   |
+| 快速排序     | O\(nlogn\)     | O\(n²\)        | O\(nlogn\)     | O\(nlogn\) | 不稳定 |
+| 堆排序       | O\(nlogn\)     | O\(nlogn\)     | O\(nlogn\)     | O\(1\)     | 不稳定 |
+| 希尔排序     | O\(nlogn\)     | O\(ns\)        | O\(n\)         | O\(1\)     | 不稳定 |
+| 归并排序     | O\(nlogn\)     | O\(nlogn\)     | O\(nlogn\)     | O\(n\)     | 稳定   |
+| 计数排序     | O\(n+k\)       | O\(n+k\)       | O\(n+k\)       | O\(n+k\)   | 稳定   |
+| 基数排序     | O\(N\*M\)      | O\(N\*M\)      | O\(N\*M\)      | O\(M\)     | 稳定   |
 

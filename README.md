@@ -2,13 +2,13 @@
 
 `interview-leetcode` 项目旨在快速复习找到工作，包括高频算法和真实面试问题问答，当然这些基本知识，也是工程师的学习素养，全部掌握对于工作来说也会有极大的帮助。
 
-![](https://img.shields.io/github/watchers/minibear2333/interview-leetcode.svg)
-![](https://img.shields.io/github/stars/minibear2333/interview-leetcode.svg) 
-![](https://img.shields.io/github/forks/minibear2333/interview-leetcode.svg) 
+![](https://img.shields.io/github/watchers/coding3min/interview-leetcode.svg)
+![](https://img.shields.io/github/stars/coding3min/interview-leetcode.svg) 
+![](https://img.shields.io/github/forks/coding3min/interview-leetcode.svg) 
 [![](https://img.shields.io/badge/ebook-%E5%9C%A8%E7%BA%BF%E9%98%85%E8%AF%BB-4ab8a1)](https://leetcode.coding3min.com/)
 
 
-![Travis](https://img.shields.io/badge/language-Golang-orange.svg) ![last commit](https://img.shields.io/github/last-commit/minibear2333/interview-leetcode.svg)
+![Travis](https://img.shields.io/badge/language-Golang-orange.svg) ![last commit](https://img.shields.io/github/last-commit/coding3min/interview-leetcode.svg)
 
 * 如果这个项目能为您带来帮助，我将感到非常荣幸！😁 
 * 如果您也对这个项目感兴趣，请点击一下  **🌟Star** 以示鼓励， 项目会 **持续更新**，谢谢你的支持。
@@ -65,14 +65,14 @@
 写作规范参考：[中文技术文档的写作规范](https://github.com/ruanyf/document-style-guide)
 
 * 如果你不会使用`git`，参考 [每天三分钟玩转Git](https://mp.weixin.qq.com/s/ReD6suGmPvEmd5wKdylR2w)
-* 如果有想法和创意，请提[issue](https://github.com/minibear2333/interview-leetcode/issues)或者进群提
-* 如果想贡献代码，请提[PR](https://github.com/minibear2333/interview-leetcode/pulls)
+* 如果有想法和创意，请提[issue](https://github.com/coding3min/interview-leetcode/issues)或者进群提
+* 如果想贡献代码，请提[PR](https://github.com/coding3min/interview-leetcode/pulls)
 * 算法刷题请使用vscode [LeetCode 插件](leetcode-vscode.md)，自动创建文件、手动提交测试
 * 如果发现错误，可以在电子书右上角直接点击编辑，会自动fork，修改完毕后手动提出pr
 
 ## License
 
-![license](https://img.shields.io/github/license/minibear2333/interview-leetcode.svg)
+![license](https://img.shields.io/github/license/coding3min/interview-leetcode.svg)
 
 本仓库的内容除了少量引用，引用内容会做标注，其余都是原创，在您引用本仓库内容或者对内容进行修改演绎时，请署名并以相同方式共享，谢谢。
 

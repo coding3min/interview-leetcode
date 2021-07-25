@@ -38,7 +38,7 @@
 
 注意：
 
-代码：[golang](https://github.com/minibear2333/interview-leetcode/tree/9d726fc1d9f1346a11ec8c461d4cecc4ad3c91ad/LeetCode/all/120.三角形最小路径和.go)
+代码：[golang](https://github.com/view-leetcode/tree/9d726fc1d9f1346a11ec8c461d4cecc4ad3c91ad/LeetCode/all/120.三角形最小路径和.go)
 
 引用：[递归+记忆化+DP](https://leetcode-cn.com/problems/triangle/solution/di-gui-ji-yi-hua-dp-bi-xu-miao-dong-by-sweetiee/)
 

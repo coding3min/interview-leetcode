@@ -48,7 +48,7 @@ func xxx(rate []int,moneyType int,money int,isMax bool) []int{
 }
 ```
 
-解法,代码见[货币汇率兑换算法.go](https://github.com/minibear2333/interview-leetcode/tree/5cb2e5224e55a017aa569f71ee31714371f1a8cd/LeetCode/other/货币汇率兑换算法.go)
+解法,代码见[货币汇率兑换算法.go](https://github.com/coding3min/interview-leetcode/tree/5cb2e5224e55a017aa569f71ee31714371f1a8cd/LeetCode/other/货币汇率兑换算法.go)
 
 ```go
 func xxx(rate []int,moneyType int,money int,isMax bool) []int{
@@ -102,7 +102,7 @@ func xxx(rate []int,moneyType int,money int,isMax bool) []int{
 }
 ```
 
-解法，代码见[货币汇率兑换算法2](https://github.com/minibear2333/interview-leetcode/tree/5cb2e5224e55a017aa569f71ee31714371f1a8cd/LeetCode/other/货币汇率兑换算法2.go)
+解法，代码见[货币汇率兑换算法2](https://github.com/coding3min/interview-leetcode/tree/5cb2e5224e55a017aa569f71ee31714371f1a8cd/LeetCode/other/货币汇率兑换算法2.go)
 
 ## 螺旋矩阵变体
 
