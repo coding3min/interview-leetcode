@@ -28,38 +28,95 @@
 
 ## 215.数组中的第k个最大元素
 
-题目：[数组中的第k个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/description/)
+题目：[数组中的第k个最大元素，比如第二大，就是找次大。](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/description/)
 
 题解： 方法1，堆排序（不推荐）
 
 * 求第K大的数，实际上就是取小根堆的根节点
 * 小根堆的性质，根节点比所有叶子节点更小
 
-注意：这里为什么用堆，是因为堆是一个完全二叉树，而二叉搜索树不自平衡，而且堆的话小根堆直接取根节点就是结果了
+![](https://coding3min.oss-accelerate.aliyuncs.com/2021/07/27/ffd837f564946747ff6fca9df7568fa894494f2e46fe0fe2d6590123432f0a57.gif)
+
+注意：这里为什么用堆，是因为堆是一个完全二叉树，而二叉搜索树不自平衡，而且堆的话小根堆保证堆个数为k，直接取根节点就是结果了
+
+堆排序的好处是，假设k比较小，而数组比较大，不需要加载全部内容到内存里
 
 方法2 快速排序变形（快速选择算法）
 
 * 其实就是快排的思路，只是做了下剪枝
 * 只要保证len-k这个位置右侧全部比k大，左侧全部小于等于k，那么len-k位置的数就是第k大
-* 因为我们不知道是哪个数，所以随便取一个数x，最终达到左侧全部`<=x`，右侧全部`>x`的效果
+
+![](https://coding3min.oss-accelerate.aliyuncs.com/2021/07/27/nwa3pv.jpg)
+
+* 因为我们不知道是哪个数，所以随便取一个数x，最终达到左侧全部`<=x`，右侧全部`>x`的效果，核心代码如下
+
+```go
+// 快排剪枝
+func quickSelect(a []int, l, r, index int) int {
+    // 查找中枢
+    q := randomPartition(a, l, r)
+    if q == index {
+        return a[q]
+    } else if q < index {
+        return quickSelect(a, q + 1, r, index)
+    }
+    return quickSelect(a, l, q - 1, index)
+}
+```
+
 * 把x的下标index和len-k比较，如果小，说明第k大数一定在`[index+1,r]`；如果大说明第k大数一定在`[l,index-1]`中
 * 缩小区间，继续随便取一个数，直到正好x的下标就是len-k为止
 
 查找中枢的办法借助快排的思路
 
+```go
+//随机中枢
+func randomPartition(a []int, l, r int) int {
+    i := rand.Int() % (r - l + 1) + l
+	// 因为把r的位置作为中枢，所以要交换
+    a[i], a[r] = a[r], a[i]
+    return partition(a, l, r)
+}
+```
+
 * 随机取一个数x，把他和r位置的数对调
+* 找到中枢的正确位置，保证左侧都比它小，右侧都比他大
+
+```go
+//快排核心代码
+func partition(a []int, l, r int) int {
+	// 因为传入的中枢是r位置
+    x := a[r]
+	// 先把i设置为l-1区间之外，保证每次更新先++再更新
+	// i 的作用是记录小于中枢的区间
+    i := l - 1
+	// j不能遍历到r位置，因为r是中枢本身，查找完之后再做交换
+    for j := l; j < r; j++ {
+		// 遍历l到r，保证i左侧包括i位置记录的都小于等于x,右侧全部大于x
+        if a[j] <= x {
+            i++
+            a[i], a[j] = a[j], a[i]
+        }
+    }
+	// 最后遍历完交换r和i+1位置，把中枢放到正确的地方
+    a[i+1], a[r] = a[r], a[i+1]
+    return i + 1
+}
+```
+
 * 维护左侧区间都比x小，所以初始化i为l-1
 * 变量j遍历`[l,r)` 左闭右开区间，大于x无操作
 * 小于x时候,`i++`，然后对调i和j位置的数字，这样又可以保证i左侧包括i位置的数都小于x
 * 遍历结束以后i+1位置的数正好是最后一个比i大的数，把他和r对调
 * 返回i+1，也就是中枢位置的下标
 
-时间复杂度：运气好就是一次就找到了On运气不好每个数都找了一次ON^2，算法导论中把每次查找都使用一个随机数，可以显著提高效率，趋近于On，具体为什么可以自己去看
+**时间复杂度**：运气好就是一次就找到了`On`运气不好每个数都找了一次`ON^2`，算法导论中把每次查找都使用一个随机数，可以显著提高效率，趋近于On，具体为什么可以自己去看
 
-为什么推荐用快选，因为空间O1，时间On~On^2比堆的时间Onlogn和Ologk更快，但是快排也有局限性
+为什么推荐用快选，因为空间O1，时间`On~On^2`比堆的时间`Onlogn`和`Ologk`更快，但是快排也有局限性
 
 * 快选需要修改原数组，如果原数组不能修改的话，还需要拷贝一份数组，空间复杂度就上去了。
 * 堆只需要保存 k 个元素的小根堆。快速排序变形的方法如果不允许修改原数组那就要保存下来所有的数据，所以数据量大时用堆更好
+
 
 引用：[优劣比较](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/tu-jie-top-k-wen-ti-de-liang-chong-jie-fa-you-lie-/)
 
