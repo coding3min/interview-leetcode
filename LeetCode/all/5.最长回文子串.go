@@ -72,7 +72,6 @@ func longestPalindrome(s string) string {
 		dp[i] = make([]bool,n)
 		dp[i][i] = true
 	}
-
 	// 枚举子串长度，从 2 开始，最长为 n
 	for L := 2;L < n + 1;L++{
 		// 枚举左边界
