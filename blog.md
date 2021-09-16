@@ -5,7 +5,7 @@
 |:---|:---|:---|:---|:---|
 |[机智的程序员小熊](https://coding3min.com)|[minibear2333](https://github.com/minibear2333)|[go语言精进之路](https://github.com/golang-minibear2333/golang)<br/>|[机智的程序员小熊](https://pic4.zhimg.com/80/v2-006a7dfa4d5af1bbde53a77f4a1b77f3_720w.jpg)|涉及各种后端语言、OpenStack、DevOps、容器等，还有一些思考|
 |[老衲的博客](https://blog.csdn.net/CalledJoker)|||||
-|[yann的小站](https://www.ai-5g.com/)|运维、go语言|||||
+|[yann的小站](https://www.ai-5g.com/)||||运维、go语言|
 
 
 
@@ -17,4 +17,6 @@
 |[Jack Cui](https://cuijiahua.com/)|剑指Offer全集题解，机器学习领域，建站文章写的比较全|
 |[wego](https://www.yuque.com/wegoer/set/blog)|一个线上go语言组织内容很丰富|
 |[星光博客](https://www.xgboke.com/wordpress/)|wordpress建站比较6、其他文章没什么意思|
+|[keep_running](https://www.yuque.com/keep_running)|复合类技术网站|
+
 
