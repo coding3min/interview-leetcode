@@ -6,6 +6,7 @@
 |[机智的程序员小熊](https://coding3min.com)|[minibear2333](https://github.com/minibear2333)|[go语言精进之路](https://github.com/golang-minibear2333/golang)<br/>|[机智的程序员小熊](https://pic4.zhimg.com/80/v2-006a7dfa4d5af1bbde53a77f4a1b77f3_720w.jpg)|涉及各种后端语言、OpenStack、DevOps、容器等，还有一些思考|
 |[老衲的博客](https://blog.csdn.net/CalledJoker)|||||
 |[yann的小站](https://www.ai-5g.com/)||||运维、go语言|
+|[华扬的云原生](https://www.gqapwd.com/)|||
 
 
 
