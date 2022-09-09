@@ -1,6 +1,6 @@
 // 题目链接：https://leetcode.cn/problems/fei-bo-na-qi-shu-lie-lcof/?envType=study-plan&id=lcof
-// day7/31
-// 第 7 天主题为：搜索与回溯算法（简单），与前一天主题相同
+// day8/31
+// 第 8 天主题为：动态规划（简单）
 // 包含三道题目：
 // 剑指offer10-I.斐波那契数列
 // 剑指offer10-II.青蛙跳台阶问题
