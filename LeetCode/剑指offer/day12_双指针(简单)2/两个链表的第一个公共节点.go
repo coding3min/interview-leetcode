@@ -1,4 +1,9 @@
 // 题目链接：https://leetcode.cn/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/
+// day12/31
+// 第 12 天主题为：双指针（简单）
+// 包含两道题目：
+// 剑指offer25.合并两个排序的链表
+// 剑指offer52.两个链表的第一个公共节点
 package main
 
 //这道题比较通俗的解法是使用两个切片保存 listA 和 listB 的所有节点，然后双层循环判断节点是否相等，若相等直接返回。
