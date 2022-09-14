@@ -5,7 +5,7 @@
 * 进入函数优先考虑边界
 * 如果出现循环，进入循环时考虑`break`条件和`continue`条件
 * 使用下标计算长度时，优先考虑区间的开闭
-* 我们应该在做算法的过程总不断的思考和总结共性
+* 我们应该在做算法的过程中不断的思考和总结共性
 
 ## 面试注意
 
@@ -40,7 +40,7 @@ math.MinInt32
 
 牛客网比较坑，一切输入输出都要自己实现
 
-还要劳记链表创建代码，[完整代码](https://github.com/coding3min/interview-leetcode/tree/5cb2e5224e55a017aa569f71ee31714371f1a8cd/LeetCode/all/0.创建链表.go)
+还要牢记链表创建代码，[完整代码](https://github.com/coding3min/interview-leetcode/tree/5cb2e5224e55a017aa569f71ee31714371f1a8cd/LeetCode/all/0.创建链表.go)
 
 ```go
 package main
