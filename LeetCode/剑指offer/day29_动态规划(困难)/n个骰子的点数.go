@@ -1,6 +1,6 @@
 // 题目链接：https://leetcode.cn/problems/nge-tou-zi-de-dian-shu-lcof/?envType=study-plan&id=lcof
-// day28/31
-// 第 28 天主题为：搜索与回溯算法（困难）
+// day29/31
+// 第 29 天主题为：动态规划（困难）
 // 包含三道题目：
 // 剑指offer19.正则表达式匹配
 // 剑指offer49.丑数
