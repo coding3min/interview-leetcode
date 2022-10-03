@@ -6,6 +6,7 @@ package main
 //注意代码中 copy(x,path) 操作，将 path 进行拷贝后再加入 res，若直接 res = append(res,path)，之后的路径将当前路径覆盖后，res 中的切片也会发生变化，这里是个小坑，需要注意一下。
 
 
+
 //Definition for a binary tree node.
 type TreeNode struct {
     Val int
@@ -13,7 +14,7 @@ type TreeNode struct {
     Right *TreeNode
 }
 
-//
+
 func pathSum(root *TreeNode, target int) [][]int {
 	res := [][]int{}
 	path := []int{}
@@ -42,6 +43,7 @@ func pathSum(root *TreeNode, target int) [][]int {
 }
 
 // 本题还有BFS解法，我改了很久总是出问题，ac后再附上
+
 
 // 回来了，已 ac
 //方法二：BFS
